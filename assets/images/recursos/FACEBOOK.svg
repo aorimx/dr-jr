@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="13px" viewBox="0 0 6 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>FACEBOOK</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M5.61054404,6.83751295 L3.85072539,6.83751295 L3.85072539,13.1319948 L1.24033679,13.1319948 L1.24033679,6.83751295 L-0.000155440414,6.83751295 L-0.000155440414,4.61331606 L1.24033679,4.61331606 L1.24033679,3.17541451 C1.24033679,2.14608808 1.72818653,0.534015544 3.87365285,0.534015544 L5.8065544,0.544196891 L5.8065544,2.70163212 L4.4030829,2.70163212 C4.17295337,2.70163212 3.85072539,2.81696891 3.85072539,3.30784974 L3.85072539,4.61759067 L5.83795337,4.61759067 L5.61054404,6.83751295 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HEADER" transform="translate(-695.000000, -88.000000)">
+            <g id="REDES" transform="translate(695.000000, 86.000000)">
+                <g id="FACEBOOK" transform="translate(0.000000, 1.554404)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-36"></g>
+                    <polygon id="Fill-35" fill="#FFFFFF" mask="url(#mask-2)" points="-3.8861658 17.0180052 9.72398705 17.0180052 9.72398705 -3.35194041 -3.8861658 -3.35194041"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

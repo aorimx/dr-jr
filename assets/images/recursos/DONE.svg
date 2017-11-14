@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="40.001 80 80 80 80 0 40.001 0 0.002 0 0.002 80"></polygon>
+    </defs>
+    <g id="DR.JUANRIESTRA-All-web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="POP-UP" transform="translate(-581.000000, -304.000000)">
+            <g id="Page-1" transform="translate(581.000000, 304.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M71.992,40 C71.992,57.6 57.597,71.99 40.002,71.99 C22.402,71.99 8.012,57.6 8.012,40 C8.012,22.4 22.402,8.01 40.002,8.01 C43.202,8.01 45.997,8.4 48.807,9.2 L55.197,2.795 C50.392,1.19 45.197,0 40.002,0 C18.012,0 0.002,18.01 0.002,40 C0.002,61.99 18.012,80 40.002,80 C61.992,80 80.002,61.99 80.002,40 L71.992,40 Z M23.592,32.4 L18.012,38.01 L35.997,55.995 L75.997,15.995 L70.392,10.39 L35.997,44.805 L23.592,32.4 Z" id="Fill-1" fill="#A4CC7B" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

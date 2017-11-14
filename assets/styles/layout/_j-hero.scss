@@ -1,0 +1,99 @@
+//Hecho por Enrique, no tocar//
+
+.heroContent{
+    max-width: 1232px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.hero{
+    background-image: url("../images/contenido/carrusel_1.png");
+    height: 536px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    .hero-aviso{
+        width: 100%;
+        background-color: $gray-light;
+        height: auto;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+
+        .content-hero-aviso{
+            max-width: 1232px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: nowrap;
+            align-items: center;
+            margin: 8px 0;
+
+            .locationIcon{
+                margin: 0;
+            }
+            p{
+                margin: 0;
+                font-size: 14px;
+                color: $color-inverse;
+            }
+
+            .closeIcon{
+                margin: 0;
+                cursor: pointer;
+                z-index: 5;
+            }
+        }
+    }
+
+    .hero-text {
+        text-align: left;
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        transform: translate(0%, -50%);
+        
+        .p-hero1{
+            color: $color-inverse;
+            text-transform: none;
+            font-size: 4rem;
+            margin: 0;
+            font-weight: bold;
+            text-shadow: 4px 3px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .p-hero2{
+            text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+            color: $color-inverse;
+            text-transform: none;
+            font-size: 3.7rem;
+            margin-top: -16px;
+        }
+
+        .hero-button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 10px 25px;
+            color: $color-inverse;
+            background-color: $color-info;
+            text-align: center;
+            cursor: pointer;
+            line-height: 1.5;
+            letter-spacing: 2px;
+            font-weight: normal;
+            border-radius: 25px 25px 25px 25px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+          }
+          
+          .hero-text button:hover {
+            background-color: #555;
+            color: white;
+          }
+      }
+}
