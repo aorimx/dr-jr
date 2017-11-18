@@ -320,7 +320,7 @@ footer {
   justify-content: space-between; }
 
 .redes {
-  padding-left: 24px;
+  padding-left: 32px;
   display: flex;
   width: 100%;
   align-items: center;
@@ -509,6 +509,22 @@ header.main-nav.responsive {
   top: 29px;
   left: 8px; }
 
+.logoImg {
+  height: 72px;
+  margin-right: 112px !important; }
+
+.cerebroImg {
+  height: 80px;
+  margin-left: 24px !important; }
+
+.fondo {
+  position: absolute;
+  z-index: -1;
+  height: 120px;
+  background: gray;
+  width: 100%;
+  top: 0; }
+
 .grid {
   display: flex;
   flex-direction: row;
@@ -576,6 +592,15 @@ header.main-nav.responsive {
       flex-wrap: nowrap;
       align-items: center;
       margin: 8px 0; }
+      .hero .hero-aviso .content-hero-aviso .llamanosTxt {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin-left: 80px; }
+        .hero .hero-aviso .content-hero-aviso .llamanosTxt img {
+          margin-right: 24px; }
       .hero .hero-aviso .content-hero-aviso .locationIcon {
         margin: 0; }
       .hero .hero-aviso .content-hero-aviso p {
@@ -586,6 +611,10 @@ header.main-nav.responsive {
         margin: 0;
         cursor: pointer;
         z-index: 5; }
+  .hero .close {
+    transform: translateY(-156px);
+    -webkit-transition: all 250ms ease-in-out;
+    transition: all 750ms ease-in-out; }
   .hero .hero-text {
     text-align: left;
     position: absolute;
@@ -622,6 +651,174 @@ header.main-nav.responsive {
     .hero .hero-text .hero-text button:hover {
       background-color: #555;
       color: white; }
+
+.section-inicio {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between; }
+  .section-inicio .box-image {
+    width: 50%;
+    position: relative; }
+    .section-inicio .box-image .img-section {
+      height: 100%; }
+    .section-inicio .box-image .img-inicio-center {
+      position: absolute;
+      bottom: -48px;
+      right: -16px; }
+  .section-inicio .box-texts {
+    width: 42%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; }
+    .section-inicio .box-texts .bigger-text {
+      font-size: 2rem;
+      margin-bottom: 0; }
+    .section-inicio .box-texts .tiny-text {
+      font-size: 12px; }
+    .section-inicio .box-texts .txt-description {
+      line-height: normal; }
+    .section-inicio .box-texts a {
+      align-self: flex-end; }
+      .section-inicio .box-texts a .btn-section-inicio {
+        margin-top: 16px;
+        margin-bottom: 32px;
+        border-radius: 25px 25px 25px 25px;
+        padding: 12px 96px;
+        font-size: 12px;
+        font-weight: normal;
+        letter-spacing: 2px;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); }
+    .section-inicio .box-texts .img-inicio-center {
+      position: absolute;
+      bottom: -48px;
+      right: -16px; }
+
+.section-inicio-2 {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between; }
+  .section-inicio-2 .box-image {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end; }
+    .section-inicio-2 .box-image .img-section {
+      height: 100%; }
+    .section-inicio-2 .box-image .img-inicio-center {
+      position: absolute;
+      bottom: -48px;
+      left: -100px; }
+  .section-inicio-2 .box-texts {
+    width: 38%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; }
+    .section-inicio-2 .box-texts .bigger-text {
+      font-size: 2rem;
+      margin-bottom: 0; }
+    .section-inicio-2 .box-texts .tiny-text {
+      font-size: 12px; }
+    .section-inicio-2 .box-texts .txt-description {
+      line-height: normal; }
+    .section-inicio-2 .box-texts a {
+      align-self: flex-end; }
+      .section-inicio-2 .box-texts a .btn-section-inicio {
+        margin-top: 16px;
+        background: white;
+        color: #607d8b;
+        border: 2px solid #607d8b;
+        margin-bottom: 32px;
+        border-radius: 25px 25px 25px 25px;
+        padding: 12px 96px;
+        font-size: 12px;
+        font-weight: medium;
+        letter-spacing: 2px; }
+
+.inicio-slider {
+  background-image: url("../images/contenido/slideTestimonios.png");
+  height: 336px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .inicio-slider .sliderContent {
+    max-width: 1232px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 96px; }
+
+.footer-dr {
+  width: 100%;
+  background: gray;
+  display: flex;
+  justify-content: center;
+  padding-top: 48px; }
+  .footer-dr .footer-content {
+    max-width: 1232px;
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .footer-dr .footer-content .footer-ubicacion {
+      width: 100%;
+      margin-bottom: 40px;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: flex-end; }
+      .footer-dr .footer-content .footer-ubicacion .footer-map {
+        width: 62%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start; }
+        .footer-dr .footer-content .footer-ubicacion .footer-map #map {
+          height: 184px;
+          background: beige;
+          width: 80%; }
+      .footer-dr .footer-content .footer-ubicacion .footer-logo {
+        width: 38%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end; }
+        .footer-dr .footer-content .footer-ubicacion .footer-logo img {
+          margin: 0; }
+    .footer-dr .footer-content .footer-contacto {
+      display: flex;
+      padding-top: 16px;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: flex-start; }
+      .footer-dr .footer-content .footer-contacto .footer-telefonos {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center; }
+        .footer-dr .footer-content .footer-contacto .footer-telefonos .numeros-telefonicos {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          flex-wrap: nowrap;
+          align-items: flex-start; }
 
 .bkt-strengths {
   padding: 64px;

@@ -1,0 +1,71 @@
+.footer-dr{
+    width: 100%;
+    background: gray;
+    display: flex;
+    justify-content: center;
+    padding-top: 48px;
+    .footer-content{
+        max-width: 1232px;
+        position: relative;
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .footer-ubicacion{
+            width: 100%;
+            margin-bottom: 40px;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: flex-end;
+
+            .footer-map{
+                width: 62%;
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+
+                #map{
+                    height: 184px;
+                    background: beige;
+                    width: 80%;
+                }
+            }
+            .footer-logo{
+                width: 38%;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                img{
+                    margin: 0;
+                }
+            }
+        }
+        .footer-contacto{
+            display: flex;
+            padding-top: 16px;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: flex-start;
+            .footer-telefonos{
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: center;
+
+                .numeros-telefonicos{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    flex-wrap: nowrap;
+                    align-items: flex-start;
+
+                }
+            }
+        }
+    }
+}

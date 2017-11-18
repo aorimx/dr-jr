@@ -17,6 +17,7 @@
     display: flex;
     justify-content: center;
 
+    //anuncio de telefonos
     .hero-aviso{
         width: 100%;
         background-color: $gray-light;
@@ -33,6 +34,19 @@
             flex-wrap: nowrap;
             align-items: center;
             margin: 8px 0;
+            
+            .llamanosTxt{
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: center;
+                width: 80%;
+                margin-left: 80px;
+
+                img{
+                    margin-right: 24px;
+                }
+            }
 
             .locationIcon{
                 margin: 0;
@@ -50,7 +64,13 @@
             }
         }
     }
+    .close{
+        transform: translateY(-156px);
+        -webkit-transition: all 250ms ease-in-out;
+        transition: all 750ms ease-in-out;
+    }
 
+    //texto y botones del hero
     .hero-text {
         text-align: left;
         position: absolute;
