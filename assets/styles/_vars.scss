@@ -20,6 +20,33 @@ $gray-ghost:   lighten($gray-base, 95%);  .gray-ghost   { color: $gray-ghost;   
 $body-bg-color: $white;
 $inner-body-bg: $white;
 
+
+//colorimetria de dr jn
+$gray-header: #58595b;
+$gray-ad: #7d7978;
+$azul-hero:#55b7e6;
+$gray-tiny-text: #969696;
+$azul-seccion: #56b7e4;
+$gray-titles: #58595b;
+$azul-modal: #b0e1f4;
+$gray-footer: #616161;
+
+
+//animations
+.fade{
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+@keyframes fade{
+  from{
+    opacity: 0.2;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+
 // Vertical space
 $space-base: 8px;
 $space-2: $space-base * 2; // 16px
@@ -29,16 +56,72 @@ $space-5: $space-base * 5; // 40px
 
 // font family
 @font-face {
-  font-family: 'BrixSans', sans-serif;
-  src: url('fonts/Light.ttf')  format('truetype');
-  font-weight: regular;
+  font-family: 'Aspira-Black';
+  src: url('fonts/Aspira-Black.ttf')  format('truetype');
 }
 @font-face {
-  font-family: 'BrixSans', sans-serif;
-  src: url('fonts/Bold.ttf')  format('truetype');
-  font-weight: bold;
+  font-family: 'Aspira-BlackIt';
+  src: url('fonts/Aspira-BlackIt.ttf')  format('truetype');
 }
-$font-family-base: 'BrixSans', sans-serif;
+@font-face {
+  font-family: 'Aspira-Bold';
+  src: url('fonts/Aspira-Bold.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Big-Caslon';
+  src: url('../styles/fonts/Big-Caslon-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Aspira-BoldIt';
+  src: url('fonts/Aspira-BoldIt.ttf')  format('truetype');
+}
+@font-face {
+  font-family: 'Aspira-Demi'; 
+  src: url('fonts/Aspira-Demi.ttf')  format('truetype');
+}
+@font-face {
+  font-family: 'Aspira-DemiIt';
+  src: url('fonts/Aspira-DemiIt.ttf')  format('truetype');
+}
+@font-face {
+  font-family: 'Aspira-Heavy';
+  src: url('fonts/Aspira-Heavy.ttf')  format('truetype');
+}
+@font-face {
+  font-family: 'Aspira-HeavyIt';
+  src: url('fonts/Aspira-HeavyIt.ttf')  format('truetype');
+}
+@font-face {
+  font-family: 'Aspira-It';
+  src: url('fonts/Aspira-It.ttf')  format('truetype');
+}
+@font-face {
+  font-family: 'Aspira-Italic2';
+  src: url('fonts/Aspira-Italic2.ttf')  format('truetype');
+}
+@font-face {
+  font-family: 'Aspira-Light';
+  src: url('fonts/Aspira-Light.ttf')  format('truetype');
+}
+@font-face {
+  font-family: 'Aspira-LightIt';
+  src: url('fonts/Aspira-LightIt.ttf')  format('truetype');
+}
+@font-face {
+  font-family: 'Aspira-Medium';
+  src: url('fonts/Aspira-Medium.ttf')  format('truetype');
+}
+@font-face {
+  font-family: 'Aspira-MediumIt';
+  src: url('fonts/Aspira-MediumIt.ttf')  format('truetype');
+}
+@font-face {
+  font-family: 'Aspira-Regular';
+  src: url('fonts/Aspira-Regular.ttf')  format('truetype');
+}
+
+$font-family-base: 'Aspira-Regular';
 $headings-font-family: $font-family-base;
 $font-size-base: 16px;
 

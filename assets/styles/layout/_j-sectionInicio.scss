@@ -16,6 +16,12 @@
             bottom: -48px;
             right: -16px;
         }
+        .img-inicio-center-3{
+            position: absolute;
+            bottom: 120px;
+            right: -16px;
+            width: 120px;
+        }
     }
     .box-texts{
         width: 42%;
@@ -29,9 +35,12 @@
         .bigger-text{
             font-size: 2rem;
             margin-bottom: 0;
+            color: $gray-titles;
         }
         .tiny-text{
             font-size: 12px;
+            color: $gray-tiny-text;
+            font-family: 'Aspira-Medium';
         }
 
         .txt-description{
@@ -44,7 +53,9 @@
                 margin-bottom: 32px;
                 border-radius: 25px 25px 25px 25px;
                 padding: 12px 96px;
+                background: $azul-seccion;
                 font-size: 12px;
+                font-family: 'Aspira-Medium';
                 font-weight: normal;
                 letter-spacing: 2px;
                 box-shadow:  2px 2px 3px rgba(0, 0, 0, 0.5);
@@ -92,9 +103,12 @@
         .bigger-text{
             font-size: 2rem;
             margin-bottom: 0;
+            color: $gray-titles;
         }
         .tiny-text{
             font-size: 12px;
+            color: $gray-tiny-text;
+            font-family: 'Aspira-Medium';
         }
 
         .txt-description{
@@ -105,17 +119,27 @@
             .btn-section-inicio{
                 margin-top: 16px;
                 background: white;
-                color: #607d8b;
-                border: 2px solid #607d8b;
+                color: $azul-seccion;
+                border: 2px solid $azul-seccion;
                 margin-bottom: 32px;
                 border-radius: 25px 25px 25px 25px;
                 padding: 12px 96px;
                 font-size: 12px;
-                font-weight: medium;
+                font-family: 'Aspira-Medium';
+               
                 letter-spacing: 2px;
                 //box-shadow:  2px 2px 3px rgba(0, 0, 0, 0.5);
             }
         }
       
     }
+}
+
+.caslon{
+    font-family: 'Big-Caslon';
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+.separator{
+    height: 40px;
 }

@@ -1,23 +1,71 @@
 .inicio-slider{
     background-image: url("../images/contenido/slideTestimonios.png");
-    height: 336px;
+    height: 400px;
+    margin-top: 40px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 
-    .sliderContent{
+    .itemsSlider{
         max-width: 1232px;
         position: relative;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        padding-left: 96px;
+        width: 40%;
+        //border: 1px solid red;
+        height: 280px;
+        transition: all 2s ease-in-out;
+        .sliderContent{
+            max-width: 1232px;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding-left: 88px;
+            transition: all 2s ease-in-out;
+    
+            h2{
+                color: $gray-titles;
+            }
+            h3{
+                text-transform: none;
+                color: $gray-titles;
+            }
+            p{
+               
+                font-size: 14px;
+            }
+            .score{
+                width: 100%;
+                margin-top: 8px;
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+            }
+        }
+
+        .itemsDirections{
+            position: absolute;
+            width: 40px;
+            padding: 8px 8px;
+            top: 32%;
+            margin-left: 16px;
+            cursor: pointer;
+            font-size: 24px;
+        }
+
+        #btn2{
+            position: absolute;
+            right: -72px;
+        }
+        .slides{
+            display: none;
+        }
     }
 }
+
