@@ -1,6 +1,7 @@
 img {
     max-width: 100%; // Hacer todas las img responsive.
     margin-bottom: $space-2;
+    height: fit-content;
 }
 .icons-list-inline--sm {
   img {

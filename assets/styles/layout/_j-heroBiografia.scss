@@ -1,0 +1,92 @@
+//Hecho por Enrique, no tocar//
+
+.hero-biografia{
+    background-image: url("../images/contenido/bannerBiografia.png");
+    height: 536px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    //anuncio de telefonos
+    .hero-aviso{
+        width: 100%;
+        background-color: $gray-ad;
+        height: auto;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+
+        .content-hero-aviso{
+            max-width: 1232px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: nowrap;
+            align-items: center;
+            margin: 8px 0;
+            
+            .llamanosTxt{
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: center;
+                width: 80%;
+                margin-left: 80px;
+
+                img{
+                    margin-right: 24px;
+                }
+            }
+
+            .locationIcon{
+                margin: 0;
+            }
+            p{
+                margin: 0;
+                font-size: 14px;
+                color: $color-inverse;
+                font-weight: 700;
+                letter-spacing: 2px;
+            }
+
+            .closeIcon{
+                margin: 0;
+                cursor: pointer;
+                z-index: 5;
+            }
+        }
+    }
+    .close{
+        transform: translateY(-156px);
+        -webkit-transition: all 250ms ease-in-out;
+        transition: all 750ms ease-in-out;
+    }
+
+    //texto y botones del hero
+    .heroContent{
+        max-width: 1232px;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        .hero-text {
+            margin-bottom: 64px;
+            
+            .p-hero1{
+                color: $color-inverse;
+                text-transform: none;
+                font-size: 3.8rem;
+                font-family: 'Big-Caslon';
+                margin: 0;
+                letter-spacing: 3px;
+                text-shadow: 4px 3px 3px rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+    
+}

@@ -1,7 +1,8 @@
 .modalInicio{
     position: fixed;
+    top:50%;
     display: flex;
-    transform: translateX(-1100px) translateY(-96%);
+    transform: translateX(-1100px) translateY(-43%);
     flex-wrap: nowrap;
     height: 558px;
     background: #fff;
@@ -103,7 +104,7 @@
     flex-direction: column;
     justify-content: space-between;
     top: 50%;
-    transform: translateY(-50%) translateX(-88px);
+    transform: translateY(-35%) translateX(-88px);
     transition: all 0.8s ease-in-out;
     border-radius: 0 12px 12px 0;
     z-index: 41;
@@ -126,11 +127,11 @@
 }
 
 .modal-open{
-    transform: translateX(0px) translateY(-96%) !important;
+    transform: translateX(0px) translateY(-43%) !important;
     transition: all 0.3s ease-in-out;
 }
 
 .modal-button-close{
-    transform:  translateY(-50%) translateX(-200px) !important;
+    transform:  translateY(-35%) translateX(-200px) !important;
     transition: all 0.8s ease-in-out;
 }
