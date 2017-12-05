@@ -4,14 +4,33 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    @include tablet{
+        width: 100%;
+        padding: 0 16px;
+        margin-bottom: 0;
+    }
+    @include mobile{
+        flex-direction: column;
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
     //border: 1px solid black;
-    .box-image{
+    .box-perfil{
         width: 43%;
         position: relative;
         border-right: 10px solid $azul-hero;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        @include tablet{
+            width: 40%;
+            border-right: 8px solid $azul-hero;
+        }
+        @include mobile{
+            width: 100%;
+            border-bottom: 8px solid $azul-hero;
+            border-right: none;
+        }
         
         .bigger-text{
             font-size: 2.4rem;
@@ -26,6 +45,9 @@
             font-size: 12px;
             color: $gray-tiny-text;
             font-family: 'Aspira-Medium';
+            @include tablet{
+                width: 90%;
+            }
         }
         
     }
@@ -38,6 +60,14 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
+        @include tablet{
+            width: 60%;
+            padding-left: 24px;
+        }
+        @include mobile{
+            width: 100%;
+            padding-left: 0;
+        }
 
         .txt-description-up{
             line-height: normal;
@@ -51,7 +81,7 @@
     }
 }
 
-.lavor{
+.labor{
     margin-top: 40px;
     margin-bottom: 40px;
     display: flex;
@@ -60,12 +90,18 @@
     width: 100%;
     background: $bg-lavor;
     
-    .lavor-content{
+    .labor-content{
         max-width: $max-width-screen;
         width: 100%;
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
+        @include tablet{
+            padding: 0 32px;
+        }
+        @include mobile{
+            padding: 0 16px;
+        }
 
         .bigger-text{
             font-size: 2.4rem;
@@ -73,47 +109,89 @@
             color: $gray-titles;
             margin-top: 80px;
             margin-bottom: 24px;
+            @include tablet{
+                margin-top: 24px;
+            }
+            @include mobile{
+                text-align: center;
+                margin-top: 24px;
+            }
         }
-        .lavor-inner{
+        .labor-inner{
             width: 100%;
             display: flex;
             flex-wrap: nowrap;
+            @include tablet{
+                flex-direction: column;
+            }
+            @include mobile{
+                flex-direction: column;
+            }
 
-            .lavor-column{
+            .labor-column{
                 width: 50%;
                 display: flex;
                 flex-wrap: nowrap;
                 flex-direction: column;
                 margin-bottom: 40px;
                 //border: 1px solid red;
+                @include tablet{
+                    width: 100%;
+                }
+                @include mobile{
+                    width: 100%;
+                }
                 .pd-left{
                     padding-left: 24px;
                     padding-right: 0 !important;
                 }
-                .lavor-item{
+                .labor-item{
                     display: flex;
                     flex-wrap: nowrap;
                     justify-content: space-between;
                     padding-right: 24px;
                     margin-top: 24px;
+                    @include mobile{
+                        flex-direction: column;
+                        padding: 0;
+                        align-items: center;
+                    }
 
-                    .lavor-item-text{
+                    .labor-item-text{
                         width: 66%;
                         border-bottom: 1px solid black;
                         margin-bottom: 0;
                         padding-bottom: 24px;
+                        @include mobile{
+                            order: 2;
+                            width: 100%;
+                            text-align: center;
+                            margin-top: 24px;
+                        }
                     }
-                    .lavor-item-text2{
+                    .labor-item-text2{
                         width: 66%;
                         border-bottom: 1px solid black;
                         margin-bottom: 0;
                         padding-bottom: 24px;
+                        @include mobile{
+                            order: 2;
+                            width: 100%;
+                            text-align: center;
+                            margin-top: 24px;
+                        }
                     }
-                    .lavor-item-text3{
+                    .labor-item-text3{
                         width: 65%;
                         border-bottom: 1px solid black;
                         margin-bottom: 0;
                         padding-bottom: 40px;
+                        @include mobile{
+                            order: 2;
+                            width: 100%;
+                            text-align: center;
+                            margin-top: 24px;
+                        }
                     }
                     .img-item{
                         margin: 0;
@@ -122,30 +200,68 @@
                     .img-item2{
                         margin-bottom: 24px;
                         align-self: flex-end;
+                        @include tablet{
+                            margin-bottom: 40px;
+                        }
+                        @include mobile{
+                            margin-bottom: 0;
+                            margin-top: 24px;
+                            align-self: center;
+                        }
                     }
                     .img-item3{
                         margin-bottom: 64px;
                         align-self: flex-end;
+                        @include mobile{
+                            margin-bottom: 0;
+                            margin-top: 24px;
+                            align-self: center;
+                        }
                     }
                     .img-item4{
                         margin-bottom: 56px;
                         align-self: flex-end;
+                        @include tablet{
+                            margin-bottom: 72px;
+                        }
+                        @include mobile{
+                            margin-bottom: 0;
+                            margin-top: 24px;
+                            align-self: center;
+                        }
                     }
                     .img-item5{
                         margin-bottom: 48px;
                         align-self: flex-end;
+                        @include mobile{
+                            margin-bottom: 0;
+                            margin-top: 24px;
+                            align-self: center;
+                        }
                     }
                     .text-not-border{
                         width: 66%;
                        
                         margin-bottom: 0;
                         padding-bottom: 24px;
+                        @include mobile{
+                            order: 2;
+                            width: 100%;
+                            text-align: center;
+                            margin-top: 24px;
+                        }
                     }
                     .text-not-border2{
                         width: 66%;
                         margin-top: 16px;
                         margin-bottom: 0;
                         padding-bottom: 24px;
+                        @include mobile{
+                            order: 2;
+                            width: 100%;
+                            text-align: center;
+                            margin-top: 24px;
+                        }
                     }
                 }
             }
@@ -168,12 +284,22 @@
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
+        @include tablet{
+            flex-direction: column;
+        }
+        @include mobile{
+            flex-direction: column;
+           
+        }
         .datos-h2{     
             font-size: 2.4rem;
             margin-bottom: 0;
             color: $gray-titles;
             margin-top: 16px;
-            margin-bottom: 16px;        
+            margin-bottom: 16px;    
+            @include mobile{
+                font-size: 2rem;
+            }    
         }
 
         .datos-img{
@@ -182,6 +308,22 @@
             width: 45%;
             justify-content: space-between;
             align-items: center;
+            @include tablet{
+                width: 100%;
+            }
+            @include mobile{
+                width: 100%;
+            }
+            img{
+                @include tablet{
+                    width: 15%;
+                    height: auto;
+                }
+                @include mobile{
+                    width: 23%;
+                    height: auto;
+                }
+            }
         }
     }
 
@@ -191,12 +333,26 @@
         justify-content: space-between;
         width: 100%;
         margin-top: 40px;
+        @include tablet{
+            flex-wrap: wrap;
+            margin-top: 16px;
+        }
+        @include mobile{
+            flex-direction: column;
+        }
 
         .datos-aside{
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
             width: 32%;
+            @include tablet{
+                order: 1;
+                width: 48%;
+            }
+            @include mobile{
+                width: 100%;
+            }
             .datos-items{
                 height: 136px;
                 display: flex;
@@ -206,6 +362,13 @@
                 padding: 8px 16px 8px 24px;
                 margin-bottom: 56px;
                 box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
+                @include tablet{
+                    margin-bottom: 24px;
+                }
+                @include mobile{
+                    margin-bottom: 16px;
+                    padding: 8px 8px 8px 16px;
+                }
 
                 p{
                     font-size: 14px;
@@ -230,6 +393,15 @@
             width: 28%;
             box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
             margin-bottom: 56px;
+            @include tablet{
+                width: 100%;
+                order: 2;
+                margin-bottom: 16px;
+            }
+            @include mobile{
+                width: 100%;
+                margin-bottom: 0;
+            }
 
             p{
                 text-align: center;
@@ -238,6 +410,10 @@
                 margin-bottom: 0;
                 font-family: 'Aspira-Light';
                 font-weight: bold;
+                @include tablet{
+                    margin-bottom: 16px;
+                    margin-top: 16px;
+                }
             }
             .datos-hr{
                 width: 55%;

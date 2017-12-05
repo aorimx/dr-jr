@@ -1,11 +1,11 @@
 //Hecho por Enrique, no tocar//
 
-.hero-biografia{
-    background-image: url("../images/contenido/bannerBiografia.png");
+.hero-trayectoria{
+    background-image: url("../images/contenido/bannerTrayectoria.png");
 
     @include mobile{
         height: 400px;
-        background-position: -440px;
+        background-position: -664px;
     }
 
     //texto y botones del hero

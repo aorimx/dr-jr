@@ -113,6 +113,12 @@
     width: 152px;
     height: 224px;
     background: $azul-modal;
+    @include tablet{
+        display: none;
+    }
+    @include mobile{
+        display: none;
+    }
     
     h2{
         letter-spacing: 3px;

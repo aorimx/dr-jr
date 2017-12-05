@@ -1,11 +1,20 @@
 @import "j-workspace";
+
+//footer and header
 @import "j-footer";
 @import "j-header";
+@import "j-footerDrJuan";
+//heros
 @import "j-grid";
 @import "j-hero";
+@import "j-hero-home";
 @import "j-heroBiografia";
+@import "j-heroTrayectoria";
+
+//modal
 @import "j-modalInicio";
+//secciones
 @import "j-sectionInicio";
 @import "j-sliderInicio";
-@import "j-footerDrJuan";
+@import "j-trayectoria";
 @import "j-biografia";

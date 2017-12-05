@@ -15,6 +15,9 @@ body {
   letter-spacing: 1px;
   line-height: 1.5;
   margin-top: 112px;
+  @include mobile{
+    margin-top: 95px;
+  }
   *{
     box-sizing: border-box;
     &:focus, &:active {

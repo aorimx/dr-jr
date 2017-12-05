@@ -1,0 +1,104 @@
+.trayectoria{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    .trayectoria-container{
+        max-width: $max-width-screen;
+        width: 100%;
+        background-image: url("../images/recursos/columna.svg");
+        height: 800px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        padding-top: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    
+        .trayectoria-content-1{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            border: 1px solid red;
+            height: fit-content;
+
+            .card-left{
+                width: 38%;
+                box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
+                border-right: 8px solid $azul-hero;
+                padding: 16px 16px 8px 16px;;
+                background: #ffffff;
+                height: fit-content;
+                position: relative;
+
+                h3{
+                    color: $gray-tiny-text;
+                    font-weight: lighter;
+                    position: relative;
+                    margin-bottom: 24px;
+                }
+                hr{
+                    width: 32px;
+                    border-top: none;
+                    border-bottom: solid 2px;
+                    border-color: $azul-hero;
+                    position: absolute;
+                    top: 44px;
+                }
+                p{
+                    font-size: 14px;
+                    margin-bottom: 6px;
+                }
+                .card-italic{
+                    font-family: 'Aspira-It';
+                    font-weight: bold;
+                }
+
+            }
+            .card-right{
+                width: 40%;
+                box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
+                border-left: 8px solid $azul-hero;
+                padding: 16px 8px 8px 24px;
+                background: #ffffff;
+                height: fit-content;
+                position: relative;
+
+                h3{
+                    color: $gray-tiny-text;
+                    font-weight: lighter;
+                    position: relative;
+                    margin-bottom: 24px;
+                }
+                hr{
+                    width: 32px;
+                    border-top: none;
+                    border-bottom: solid 2px;
+                    border-color: $azul-hero;
+                    position: absolute;
+                    top: 44px;
+                }
+                p{
+                    font-size: 14px;
+                    margin-bottom: 6px;
+                }
+                .card-italic{
+                    font-family: 'Aspira-It';
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+//Margins
+.mg-40{
+    margin-top: 40px;
+}
+.sn-mg{
+    margin-bottom: 0 !important;
+}

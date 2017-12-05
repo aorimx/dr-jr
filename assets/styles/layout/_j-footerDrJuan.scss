@@ -1,3 +1,4 @@
+
 .footer-dr{
     width: 100%;
     background: $gray-footer;
@@ -12,119 +13,212 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+        flex-wrap: nowrap;
         justify-content: center;
 
-        .footer-ubicacion{
-            width: 100%;
-            margin-bottom: 40px;
+        .footer-inner{
             display: flex;
             flex-wrap: nowrap;
-            justify-content: center;
-            align-items: flex-end;
-
-            .footer-map{
+            flex-direction: row;
+            width: 100%;
+            @include tablet{
+                flex-direction: column;
+            }
+            @include mobile{
+                flex-direction: column;
+            }
+            
+            .footer-ubicacion{
                 width: 62%;
+                margin-bottom: 40px;
                 display: flex;
                 flex-wrap: nowrap;
                 flex-direction: column;
                 justify-content: center;
                 align-items: flex-start;
-
-                .footer-h2{
-                    color: #fff;
-                    font-size: 1.6rem;
+                @include tablet{
+                    width: 100%;
+                    padding: 0 24px;
                 }
-
-                #map{
-                    height: 184px;
-                    //background: beige;
-                    width: 95%;
+                @include mobile{
+                    width: 100%;
+                    padding: 0 16px;
                 }
-            }
-            .footer-logo{
-                width: 38%;
-                display: flex;
-                justify-content: flex-end;
-                align-items: flex-end;
-                img{
-                    margin: 0;
-                }
-            }
-        }
-        .footer-contacto{
-            display: flex;
-            padding-top: 16px;
-            flex-wrap: nowrap;
-            justify-content: flex-start;
-            align-items: flex-start;
-            .footer-telefonos{
-                width: 62%;
-                display: flex;
-                flex-wrap: nowrap;
-                justify-content: flex-start;
-                align-items: center;
-
-                .numeros-telefonicos{
-                    width: 45%;
-                    border-right: 1px solid white;
+            
+                .footer-map{
+                    width: 100%;
                     display: flex;
+                    flex-wrap: nowrap;
                     flex-direction: column;
                     justify-content: center;
-                    flex-wrap: nowrap;
                     align-items: flex-start;
-
-                    .phones{
-                        display: flex;
-                        justify-content: flex-start;
-                        .imgPhones{
-                            margin-right: 24px;
-                            margin-bottom: 4px;
+                    margin-bottom: 56px;
+                    @include mobile{
+                        margin-bottom: 24px;
+                    }
+        
+                    .footer-h2{
+                        color: #fff;
+                        font-size: 1.6rem;
+                    }
+            
+                    #map{
+                        height: 184px;
+                        //background: beige;
+                        width: 95%;
+                        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+                        @include tablet{
+                            width: 100%;
                         }
-                        p{
-                            margin: 4px 0;
-                            color: #fff;
-                            a{
+                        @include mobile{
+                            width: 100%;
+                        }
+                    }
+                }
+                .footer-telefonos{
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    justify-content: flex-start;
+                    align-items: center;
+                    @include mobile{
+                        flex-direction: column;
+                    }
+    
+                    .numeros-telefonicos{
+                        width: 45%;
+                        border-right: 1px solid white;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        flex-wrap: nowrap;
+                        align-items: flex-start;
+                        order: 1;
+                        @include tablet{
+                            width: 50%;
+                        }
+                        @include mobile{
+                            order: 2;
+                            width: 100%;
+                            border-right: none;
+                            padding-left: 8px;
+                        }
+    
+                        .phones{
+                            display: flex;
+                            justify-content: flex-start;
+                            @include mobile{
+                                align-items: center;
+                            }
+                            .imgPhones{
+                                margin-right: 24px;
+                                margin-bottom: 4px;
+
+                            }
+                            p{
+                                margin: 4px 0;
                                 color: #fff;
-
-                                .emergency-text{
-                                    color: $azul-modal;
-                                }
-
-                                .emergency-text:hover{
-                                    color: $azul-seccion;
+                                a{
+                                    color: #fff;
+            
+                                    .emergency-text{
+                                        color: $azul-modal;
+                                    }
+    
+                                    .emergency-text:hover{
+                                        color: $azul-seccion;
+                                    }
                                 }
                             }
                         }
                     }
-                }
-
-                .footer-address{
-                    width: 50%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    flex-wrap: nowrap;
-                    align-items: flex-start;
-                    padding-left: 24px;
-                    p{
-                        margin: 4px 0;
-                        color: #fff;
-                        font-size: 14px;
+            
+                    .footer-address{
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        flex-wrap: nowrap;
+                        align-items: flex-start;
+                        padding-left: 24px;
+                        order: 2;
+                        @include mobile{
+                            order: 1;
+                            width: 100%;
+                            margin-bottom: 24px;
+                            padding-left: 8px;
+                        }
+                        p{
+                            margin: 4px 0;
+                            color: #fff;
+                            font-size: 14px;
+                        }
                     }
                 }
+                
             }
-            .footer-redes{
+            .footer-contacto{
                 width: 38%;
                 display: flex;
+                padding-top: 16px;
                 flex-wrap: nowrap;
-                justify-content: flex-end;
+                flex-direction: column;
+                justify-content: flex-start;
                 align-items: center;
+                padding-left: 32px;
+                @include tablet{
+                    width: 100%;
+                    padding-left: 0;
+                }
+                @include mobile{
+                    width: 100%;
+                    padding: 0 16px;
+                }
+                .footer-logo{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    .cerebroImg{
+                        margin-top: 32px;
+                        margin-bottom: 32px;
+                        margin-left: 0 !important;
+                        @include mobile{
+                            height: 80px !important;
+                            margin-top: 0;
+                        }
+                    }
+                    .logoImge{
+                        @include mobile{
+                            height: 30px;;
+                        }
+                    }
+                    .logoSlogan{
+                        height: 12px;
+                        margin-top: 8px;
+                        @include mobile{
+                            height: 8px;;
+                        }
+                    }
+                }
+                .footer-redes{
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 48px;
+            
+                    .imgFooterRedes{
+                        margin: 8px 16px 6px 24px;
+                        @include mobile{
+                            margin: 8px 12px 8px 12px;
+                        }
 
-                .imgFooterRedes{
-                    margin: 8px 0px 6px 27px;
-
-                    img{
-                        height: 18px;;
+                        img{
+                            height: 18px;;
+                        }
                     }
                 }
             }
@@ -132,16 +226,42 @@
         .footer-copyright{
             display: flex;
             justify-content: space-between;
-            margin-top: 64px;
-            margin-bottom: 16px;
+            margin-top: 16px;
+            margin-bottom: 24px;
             padding-left: 40px;
+            @include tablet{
+                width: 100%;
+                padding: 0 16px;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 24px;
+            }
+            @include mobile{
+                width: 100%;
+                padding: 0 16px;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 24px;
+            }
             p{
                 margin-bottom: 0;
                 font-size: 12px;
                 color: white;
+                @include tablet{
+                    text-align: center;
+                    margin-bottom: 16px;
+                }
+
+                @include mobile{
+                    text-align: center;
+                    margin-bottom: 16px;
+                }
 
                 a{
                     color: #fff;
+                }
+                a:hover{
+                    color: #b0e1f4;
                 }
             }
         }

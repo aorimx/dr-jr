@@ -7,8 +7,16 @@
     background-size: cover;
     position: relative;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    @include mobile{
+        justify-content: center;
+    }
+    .slider-container{
+        max-width: 1232px;
+        width: 100%;
+        
+    }
 
     .itemsSlider{
         max-width: 1232px;
@@ -17,6 +25,13 @@
         //border: 1px solid red;
         height: 280px;
         transition: all 2s ease-in-out;
+        @include tablet{
+            width: 60%;
+        }
+        @include mobile{
+            height: 344px;
+            width: 100%;
+        }
         .sliderContent{
             max-width: 1232px;
             position: absolute;
@@ -28,17 +43,31 @@
             align-items: flex-start;
             padding-left: 88px;
             transition: all 2s ease-in-out;
+            @include mobile{
+                align-items: center;
+                padding: 0px 40px;
+            }
     
             h2{
                 color: $gray-titles;
+                @include mobile{
+                    text-align: center;
+                }
             }
             h3{
                 text-transform: none;
                 color: $gray-titles;
+                @include mobile{
+                    text-align: center;
+                }
             }
             p{
                
                 font-size: 14px;
+                @include mobile{
+                    text-align: center;
+                    margin-bottom: 0;
+                }
             }
             .score{
                 width: 100%;
@@ -46,6 +75,15 @@
                 display: flex;
                 flex-wrap: nowrap;
                 justify-content: space-between;
+
+                @include mobile{
+                    flex-direction: column;
+
+                    .stars{
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
             }
         }
 
@@ -57,11 +95,24 @@
             margin-left: 16px;
             cursor: pointer;
             font-size: 24px;
+            z-index: 4;
+            @include mobile{
+                font-size: 32px;
+                top: 46%;
+            }
         }
 
         #btn2{
             position: absolute;
             right: -72px;
+            @include mobile{
+                right: -2px;
+            }
+        }
+        #btn1{
+            @include mobile{
+                left: -16px;
+            }
         }
         .slides{
             display: none;

@@ -19,37 +19,50 @@
   <!--  Header by Enrique -->
   <div class="header-container">
     <header class="main-nav">
-      <img src="assets/images/recursos/cerebro.png" alt="" class="cerebroImg">
-      <img src="assets/images/recursos/nombreDr.png" alt="" class="logoImg">
+      <img src="assets/images/recursos/cerebroBlanco.svg" alt="" class="cerebroImg">
+      <div class="images-navBar">
+        <img src="assets/images/recursos/nombreDrBlanco.png" alt="" class="logoImg">
+        <img src="assets/images/recursos/Slogan.png"class="logoSlogan" alt="">
+      </div>
+
       <div class="navigationBar">
-        <nav role="navigation">
+        <nav role="navigation" class="navigation">
           <ul>
-            <a href="">
-              <li>
+            <a href="index.html">
+              <li class="activeView">
                 INICIO
               </li>
             </a>
-            <a href="">
+            <a href="biografia.html">
               <li>
                 BIOGRAFÍA
               </li>
             </a>
-            <a href="">
+            <a href="trayectoria.html">
               <li>
                 TRAYECTORIA
               </li>
             </a>
-            <a href="">
+            <a href="memorias.html">
               <li>
                 MEMORIAS
               </li>
             </a>
-            <a href="">
+            <a href="contacto.php">
               <li>
                CONTACTO
               </li>
             </a>
            
+          </ul>
+          <ul class="idiomas-responsive">
+            <a href="#">
+              <li>ES</li>
+            </a>
+            <a href="#">
+              <li>EN</li>
+            </a>
+            
           </ul>
         </nav>
         <div class="redes">
@@ -65,7 +78,7 @@
           <a href="#">
             <img src="assets/images/recursos/intermed.svg" alt="">
           </a>
-          <ul>
+          <ul class="list-idioma">
             <a href="#">
               <li>ES</li>
             </a>
@@ -86,7 +99,7 @@
   </div>
 
   <!--  Hero  By Enrique-->
-  <div class="hero">
+  <div class="hero-home hero">
     <div class="hero-aviso">
       <div class="content-hero-aviso">
         <div class="llamanosTxt"> 
@@ -100,7 +113,7 @@
       <div class="hero-text">
         <p class="p-hero1">Conoce la opinión</p>
         <p class="p-hero2">de mis <medium>pacientes</medium></p>
-        <button class="hero-button">entrar</button>
+        <a href="#testimonios"><button class="hero-button">entrar</button></a>
       </div>
     </center>
   </div>
@@ -160,7 +173,7 @@
           <p class="tiny-text">Educación, concursos, labores sociales, entre otras cosas hacen que el Dr. Juan Manuel Riestra tenga una experiencia y trayectoria de lo más completa.</p>
           <p class="txt-description">Es promotor de conferencias y cursos, tanto nacionales como internacionales Ha contribuido en los primeros ciclos de exposiciones monográficas de actualización cientifíca con diferentes temas médicos. Tiene varios estudios al respecto sobre la combinación sobre lesiones focales y difusas en el Traumatismo de Cráneo Encefálico Severo.</p>
           <p class="txt-description">Fue nominado en 1993 en la Worldwide Federation of Neurological Society (WFNS) con el tema de Anatomía de Seno Cavernoso, consiguiendo exponer la Estructura Hexaédrica Paraselar.</p>
-          <a href="">
+          <a href="biografia.html#labor">
             <button class="btn-section-inicio">ir a sección</button>     
           </a>        
          
@@ -181,14 +194,17 @@
             <div class="separator"></div>
             <p class="txt-description">La realización de la Especialidad en Neurocirugía y de otras ciencias requiere de la adquisición de experiencia, convivencia y la estancia hospitalaria con los principales exponentes de medicina en el mundo.</p>
             <div class="separator"></div>
-            <a href="">
+            <a href="memorias.html">
                 <button class="btn-section-inicio">ir a sección</button>     
             </a>        
           </div>
       </div>
-          
-      <!-- Slider by kikin -->
-      <div class="inicio-slider">
+      
+    </div>
+  </main>
+  <!-- Slider by kikin -->
+  <div class="inicio-slider" id="testimonios">
+    <div class="slider-container">
         <div class="itemsSlider">
             <div class="sliderContent slides fade">
                 <h2 class="p-hero1 caslon">TESTIMONIOS</h2>
@@ -238,59 +254,60 @@
             <span id="btn1" class="itemsDirections" onclick="plusIndex(-1)"><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
             <span id="btn2" class="itemsDirections" onclick="plusIndex(+1)"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
         </div>
-      </div>
-      
     </div>
-  </main>
+  </div>
   <footer class="footer-dr">
     <div class="footer-content">
-      <div class="footer-ubicacion">
-        <div class="footer-map">
-          <h2 class="caslon footer-h2" >UBICACIÓN</h2>
-          <div id="map">
-            
-          </div>
-        </div>
-        <div class="footer-logo">
-          <img src="assets/images/recursos/Logo.png" alt="">
-        </div>
-
-      </div>
-      <div class="footer-contacto">
-        <div class="footer-telefonos">
-          <div class="numeros-telefonicos">
-            <div class="phones">
-              <img src="assets/images/recursos/phone.svg" class="imgPhones" alt="">
-              <p>Tel. <a href="tel:33381360"> (33) 3813 1360</a></p>
+      <div class="footer-inner">
+          <div class="footer-ubicacion">
+              <div class="footer-map">
+                <h2 class="caslon footer-h2" >UBICACIÓN</h2>
+                <div id="map">
+                  
+                </div>
+              </div>
+              <div class="footer-telefonos">
+                  <div class="numeros-telefonicos">
+                    <div class="phones">
+                      <img src="assets/images/recursos/phone.svg" class="imgPhones" alt="">
+                      <p>Tel. <a href="tel:33381360"> (33) 3813 1360</a></p>
+                    </div>
+                    <div class="phones">
+                      <img src="assets/images/recursos/emergency.svg" class="imgPhones" alt="">
+                      <p><a href="tel:013331000260"><span class="emergency-text">EMERGENCIAS</span> (01) 33 3100 0260</a></p>
+                    </div>
+                    <div class="phones">
+                      <img src="assets/images/recursos/iconoTel3.svg" class="imgPhones" alt="">
+                      <p><a href="tel:018008770300"> 01 800 877 0300.</a></p>
+                    </div>
+                  </div>
+                  <div class="footer-address">
+                    <p>Pablo Neruda #3265 /2° Piso, Consultorio 28</p>
+                    <p>Col. Providencia. C.P. 44630. Guadalajara, Jalisco</p>
+                  </div>
+              </div>
             </div>
-            <div class="phones">
-              <img src="assets/images/recursos/emergency.svg" class="imgPhones" alt="">
-              <p><a href="tel:013331000260"><span class="emergency-text">EMERGENCIAS</span> (01) 33 3100 0260</a></p>
+            <div class="footer-contacto">
+              <div class="footer-logo">
+                <img src="assets/images/recursos/cerebroBlanco.svg" alt="" class="cerebroImg">
+                <img src="assets/images/recursos/nombreDrBlanco.png" alt="" class="logoImg">
+                 <img src="assets/images/recursos/Slogan.png"class="logoSlogan" alt="">
+              </div>
+              <div class="footer-redes">
+                <a href="#" class="imgFooterRedes">
+                  <img src="assets/images/recursos/facebook.svg" alt="">
+                </a>
+                <a href="#" class="imgFooterRedes">
+                  <img src="assets/images/recursos/instgram.svg" alt="">
+                </a>
+                <a href="#" class="imgFooterRedes">
+                  <img src="assets/images/recursos/doctoralia.svg" alt="">
+                </a>
+                <a href="#" class="imgFooterRedes">
+                  <img src="assets/images/recursos/intermed.svg" alt="">
+                </a>
+              </div>
             </div>
-            <div class="phones">
-              <img src="assets/images/recursos/iconoTel3.svg" class="imgPhones" alt="">
-              <p><a href="tel:018008770300"> 01 800 877 0300.</a></p>
-            </div>
-          </div>
-          <div class="footer-address">
-            <p>Pablo Neruda #3265 /2° Piso, Consultorio 28</p>
-            <p>Col. Providencia. C.P. 44630. Guadalajara, Jalisco</p>
-          </div>
-        </div>
-        <div class="footer-redes">
-          <a href="#" class="imgFooterRedes">
-            <img src="assets/images/recursos/facebook.svg" alt="">
-          </a>
-          <a href="#" class="imgFooterRedes">
-            <img src="assets/images/recursos/instgram.svg" alt="">
-          </a>
-          <a href="#" class="imgFooterRedes">
-            <img src="assets/images/recursos/doctoralia.svg" alt="">
-          </a>
-          <a href="#" class="imgFooterRedes">
-            <img src="assets/images/recursos/intermed.svg" alt="">
-          </a>
-        </div>
       </div>
       <div class="footer-copyright">
         <p>Copyright © Dr. Juan Manuel Riestra Castañeda 2017. Todos los derechos Reservados.</p>
@@ -389,7 +406,7 @@
       slide[i].style.display = "none";
       
     };
-    slide[slideIndex-1].style.display = "block";
+    slide[slideIndex-1].style.display = "flex";
   }
 </script>
 <!--  Modal by kikin -->

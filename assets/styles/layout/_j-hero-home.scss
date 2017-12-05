@@ -1,0 +1,70 @@
+//Hecho por Enrique, no tocar//
+
+.hero-home{
+    background-image: url("../images/contenido/carrusel_1.png");
+    @include mobile{
+        height: 400px;
+        background-position: -488px;;
+    }
+
+    //texto y botones del hero
+    .hero-text {
+        text-align: left;
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        transform: translate(0%, -50%);
+        @include mobile{
+            top: 68%;
+            text-align: center;
+            .p-hero1{
+                font-size:2.1rem !important; 
+            }
+            .p-hero2{
+                font-size: 2rem !important;
+            }
+
+        }
+        
+        .p-hero1{
+            color: $color-inverse;
+            text-transform: none;
+            font-size: 4rem;
+            margin: 0;
+            font-weight: bold;
+            text-shadow: 4px 3px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .p-hero2{
+            text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+            color: $color-inverse;
+            text-transform: none;
+            font-size: 3.7rem;
+            margin-top: -16px;
+        }
+
+        .hero-button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 10px 25px;
+            color: $color-inverse;
+            background-color: $azul-hero;
+            text-align: center;
+            cursor: pointer;
+            line-height: 1.5;
+            letter-spacing: 2px;
+            font-weight: normal;
+            border-radius: 25px 25px 25px 25px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+            @include tablet{
+                width: 50%;
+            }
+          }
+          
+          .hero-text button:hover {
+            background-color: #555;
+            color: white;
+          }
+      }
+}
