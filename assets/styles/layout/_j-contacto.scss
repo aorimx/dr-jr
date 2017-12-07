@@ -1,0 +1,129 @@
+.contacto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    @include tablet{
+        margin-top: 32px;
+    }
+    @include mobile{
+        margin-top: 32px;
+    }
+
+    .contacto-title{
+        color: $azul-modal;
+        text-transform: none;
+        font-size: 3.7rem;
+        font-family: 'Big-Caslon';
+        margin: 0;
+        margin-bottom: 32px;
+        letter-spacing: 4px;
+        font-weight: normal;
+    
+        @include tablet{
+            font-size: 3.5rem;
+            margin-left: 16px;
+        }
+        @include mobile{
+            font-size: 2.5rem;
+            margin-left: 8px;
+            letter-spacing: 3px;
+            margin-bottom: 16px;
+        }
+    }
+
+    .contacto-form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .form-container{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            @include mobile{
+                flex-direction: column;
+            }
+
+            .form-card{
+                width: 49%;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                @include mobile{
+                    width: 100%;
+                }
+
+                label{
+                    margin-left: 24px;
+                }
+
+                input{
+                    height: 38px;
+                    border: solid 2px $gray-ad;
+                    position: relative;
+                }
+                select{
+                    border: solid 2px $gray-ad;
+                    height: 38px;
+                    position: relative;
+                }
+            }
+        }
+        .form-container-2{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            label{
+                margin-left: 24px;
+            }
+
+            input{
+                height: 38px;
+                border: solid 2px $gray-ad;
+                position: relative;
+            }
+            select{
+                border: solid 2px $gray-ad;
+                height: 38px;
+                position: relative;
+            }
+            textarea{
+                height: 200px;
+                border: solid 2px $gray-ad;
+                padding-top: 4px;
+                position: relative;
+            }
+
+        }
+        button{
+            max-width: 100% !important;
+            width: 100%;
+            border: 2px solid;
+            border-color: $gray-ad;
+            background: $gray-ad;
+            border-radius: 4px;
+            margin-top: 8px;
+            letter-spacing: 4px;
+        }
+        button:hover{
+            border: 2px solid;
+            border-color: $gray-ad;
+            background: #fff;
+            color: $gray-ad;
+        }
+        input.error, textarea.error{
+            border-color:#F44336!important;
+        }
+        label.error{
+            color: #F44336;
+            position: absolute;
+            top: 12px;
+            font-size: 11px;
+            right: 0;
+        }
+    }
+}

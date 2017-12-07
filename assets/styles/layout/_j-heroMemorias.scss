@@ -1,11 +1,10 @@
 //Hecho por Enrique, no tocar//
 
-.hero-trayectoria{
-    background-image: url("../images/contenido/bannerTrayectoria.png");
+.hero-memorias{
+    background-image: url("../images/contenido/bannerMemorias.png");
 
     @include mobile{
         height: 400px;
-        background-position: -664px;
     }
 
     //texto y botones del hero
@@ -30,11 +29,11 @@
                 text-shadow: 4px 3px 3px rgba(0, 0, 0, 0.5);
                 @include tablet{
                     font-size: 3.5rem;
-                    margin-left: 24px;
+                    margin-left: 16px;
                 }
                 @include mobile{
-                    font-size: 2rem;
-                    margin-left: 16px;
+                    font-size: 2.5rem;
+                    margin-left: 8px;
                 }
             }
         }

@@ -1,0 +1,15 @@
+//Hecho por Enrique, no tocar//
+
+.hero-contacto{
+    height: 56px !important;
+
+    @include tablet{
+        height: 64px !important;
+    }
+    @include mobile{
+        height: 64px !important;
+    }
+
+    
+    
+}

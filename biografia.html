@@ -66,13 +66,13 @@
           </ul>
         </nav>
         <div class="redes">
-          <a href="#">
+          <a href="https://www.facebook.com/neurocenter10/" target="_blank">
             <img src="assets/images/recursos/facebook.svg" alt="">
           </a>
           <a href="#">
             <img src="assets/images/recursos/instgram.svg" alt="">
           </a>
-          <a href="#">
+          <a href="https://www.doctoralia.com.mx/medico/riestra+castaneda+juan+manuel-12335173" target="_blank">
             <img src="assets/images/recursos/doctoralia.svg" alt="">
           </a>
           <a href="#">
@@ -355,34 +355,5 @@
   });
   }
 </script>
-<!-- Slider by kikin -->
-<script>
-
-  var slideIndex = 1;
-
-  showImage(slideIndex);
-
-  function plusIndex(n) {
-    showImage(slideIndex += n);
-  }
-
-  function showImage(n) {
-    var slide = document.getElementsByClassName("slides");
-
-    if (n > slide.length){
-      slideIndex = 1
-    };
-    if (n < 1){
-      slideIndex = slide.length
-    };
-    for (var i = 0; i < slide.length; i++) {
-      slide[i].style.display = "none";
-      
-    };
-    slide[slideIndex-1].style.display = "block";
-  }
-</script>
-<!--  Modal by kikin -->
-<Script src="assets/scripts/modal.js"></Script>
 </body>
 </html>

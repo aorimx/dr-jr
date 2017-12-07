@@ -8,10 +8,10 @@
         max-width: $max-width-screen;
         width: 100%;
         background-image: url("../images/recursos/columna.svg");
-        height: 800px;
+       
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100% 100%;
         position: relative;
         padding-top: 80px;
         display: flex;
@@ -22,9 +22,14 @@
             width: 100%;
             display: flex;
             justify-content: space-between;
-            flex-wrap: nowrap;
-            border: 1px solid red;
+            flex-wrap: wrap;
+            //border: 1px solid red;
             height: fit-content;
+            @include mobile{
+                flex-direction: column;
+                align-items: center;
+                flex-wrap: nowrap;
+            }
 
             .card-left{
                 width: 38%;
@@ -34,6 +39,9 @@
                 background: #ffffff;
                 height: fit-content;
                 position: relative;
+                @include mobile{
+                    width: 90%;
+                }
 
                 h3{
                     color: $gray-tiny-text;
@@ -67,6 +75,10 @@
                 background: #ffffff;
                 height: fit-content;
                 position: relative;
+                @include mobile{
+                    width: 90%;
+                    margin-bottom: 24px;
+                }
 
                 h3{
                     color: $gray-tiny-text;
@@ -92,13 +104,39 @@
                 }
             }
         }
+
+        
     }
 }
 
 //Margins
 .mg-40{
     margin-top: 40px;
+    @include mobile{
+        margin-top: 24px;
+    }
 }
 .sn-mg{
     margin-bottom: 0 !important;
+}
+.mg-32{
+    margin-top: -40px;
+    @include mobile{
+        margin-top: 0;
+    }
+}
+.mg-card{
+    margin-top: -56px;
+    @include mobile{
+        margin-top: 0;
+    }
+}
+.mg-resp{
+ 
+    @include tablet{
+        margin-top: 32px;
+    }
+    @include mobile{
+        margin-top: 0;
+    }
 }

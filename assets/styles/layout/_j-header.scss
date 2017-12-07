@@ -389,6 +389,9 @@ header.main-nav.responsive {
   background: #58595b;
   width: 100%;
   top: 0;
+  @include mobile{
+    height: 96px;
+  }
 }
 //clase para el nav bar cuando se esta en una vista
 .activeView{

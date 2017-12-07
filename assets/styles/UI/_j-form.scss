@@ -17,7 +17,7 @@ form {
   }
 }
 label {
-  margin-bottom: $space-base;
+  margin-bottom: 4px;
   display: flex;
   b {
     margin-left: $space-base;
@@ -26,6 +26,7 @@ label {
 }
 input[type=text],
 input[type=email],
+input[type=date],
 input[type=search],
 input[type=tel],
 input[type=url],
@@ -37,8 +38,7 @@ textarea, select {
   padding-top: 2px;
   padding-left: $space-base;
   margin-bottom: $space-2;
-  border: solid 1px $gray-lighter;
-  border-radius: 4px;
+  border-radius: 2px;
   text-align: left;
   font-size: 16px;
   font-weight: 300;
@@ -48,9 +48,7 @@ textarea, select {
   &:focus {
     outline: none;
   }
-  &:active, &:focus, &:visited {
-    border-bottom-color: $color-inverse;
-  }
+ 
 }
 select {
   border: none;
@@ -70,4 +68,11 @@ input[type=checkbox]{
   margin-top: 4px;
   margin-bottom: $space-2;
   margin-left: $space-base;
+}
+input[type=date]::-webkit-inner-spin-button, 
+input[type=date]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
 }

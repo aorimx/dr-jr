@@ -280,6 +280,7 @@ body {
     padding-right: 16px;
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     max-width: 985.6px; }
   .j-workspace .j-wrap-90 {
     margin: 0 auto;
@@ -287,6 +288,7 @@ body {
     padding-right: 16px;
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     max-width: 1108.8px; }
 
 footer {
@@ -666,6 +668,9 @@ header.main-nav.responsive {
   background: #58595b;
   width: 100%;
   top: 0; }
+  @media screen and (max-width: 600px) {
+    .fondo {
+      height: 96px; } }
 
 .activeView {
   font-weight: bold; }
@@ -677,6 +682,14 @@ header.main-nav.responsive {
   justify-content: center;
   padding-top: 48px;
   margin-top: 56px; }
+  @media screen and (max-width: 900px) {
+    .footer-dr {
+      margin-top: 32px;
+      padding-top: 24px; } }
+  @media screen and (max-width: 600px) {
+    .footer-dr {
+      margin-top: 32px;
+      padding-top: 24px; } }
   .footer-dr .footer-content {
     max-width: 1232px;
     position: relative;
@@ -766,20 +779,21 @@ header.main-nav.responsive {
                 padding-left: 8px; } }
             .footer-dr .footer-content .footer-inner .footer-ubicacion .footer-telefonos .numeros-telefonicos .phones {
               display: flex;
-              justify-content: flex-start; }
+              justify-content: flex-start;
+              align-items: baseline; }
               @media screen and (max-width: 600px) {
                 .footer-dr .footer-content .footer-inner .footer-ubicacion .footer-telefonos .numeros-telefonicos .phones {
                   align-items: center; } }
               .footer-dr .footer-content .footer-inner .footer-ubicacion .footer-telefonos .numeros-telefonicos .phones .imgPhones {
                 margin-right: 24px;
-                margin-bottom: 4px; }
+                margin-bottom: 0; }
               .footer-dr .footer-content .footer-inner .footer-ubicacion .footer-telefonos .numeros-telefonicos .phones p {
                 margin: 4px 0;
                 color: #fff; }
                 .footer-dr .footer-content .footer-inner .footer-ubicacion .footer-telefonos .numeros-telefonicos .phones p a {
                   color: #fff; }
                   .footer-dr .footer-content .footer-inner .footer-ubicacion .footer-telefonos .numeros-telefonicos .phones p a .emergency-text {
-                    color: #b0e1f4; }
+                    color: #a2dfff; }
                   .footer-dr .footer-content .footer-inner .footer-ubicacion .footer-telefonos .numeros-telefonicos .phones p a .emergency-text:hover {
                     color: #56b7e4; }
           .footer-dr .footer-content .footer-inner .footer-ubicacion .footer-telefonos .footer-address {
@@ -1115,11 +1129,52 @@ header.main-nav.responsive {
         @media screen and (max-width: 900px) {
           .hero-trayectoria .heroContent .hero-text .p-hero1 {
             font-size: 3.5rem;
-            margin-left: 16px; } }
+            margin-left: 24px; } }
         @media screen and (max-width: 600px) {
           .hero-trayectoria .heroContent .hero-text .p-hero1 {
+            font-size: 2rem;
+            margin-left: 16px; } }
+
+.hero-memorias {
+  background-image: url("../images/contenido/bannerMemorias.png"); }
+  @media screen and (max-width: 600px) {
+    .hero-memorias {
+      height: 400px; } }
+  .hero-memorias .heroContent {
+    max-width: 1232px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end; }
+    .hero-memorias .heroContent .hero-text {
+      margin-bottom: 64px; }
+      .hero-memorias .heroContent .hero-text .p-hero1 {
+        color: #FFF;
+        text-transform: none;
+        font-size: 3.8rem;
+        font-family: 'Big-Caslon';
+        margin: 0;
+        letter-spacing: 3px;
+        text-shadow: 4px 3px 3px rgba(0, 0, 0, 0.5); }
+        @media screen and (max-width: 900px) {
+          .hero-memorias .heroContent .hero-text .p-hero1 {
+            font-size: 3.5rem;
+            margin-left: 16px; } }
+        @media screen and (max-width: 600px) {
+          .hero-memorias .heroContent .hero-text .p-hero1 {
             font-size: 2.5rem;
             margin-left: 8px; } }
+
+.hero-contacto {
+  height: 56px !important; }
+  @media screen and (max-width: 900px) {
+    .hero-contacto {
+      height: 64px !important; } }
+  @media screen and (max-width: 600px) {
+    .hero-contacto {
+      height: 64px !important; } }
 
 .modalInicio {
   position: fixed;
@@ -1213,7 +1268,7 @@ header.main-nav.responsive {
   transition: all .5s;
   width: 152px;
   height: 224px;
-  background: #b0e1f4; }
+  background: #a2dfff; }
   @media screen and (max-width: 900px) {
     .modal-button {
       display: none; } }
@@ -1570,10 +1625,9 @@ header.main-nav.responsive {
     max-width: 1232px;
     width: 100%;
     background-image: url("../images/recursos/columna.svg");
-    height: 800px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     position: relative;
     padding-top: 80px;
     display: flex;
@@ -1583,9 +1637,13 @@ header.main-nav.responsive {
       width: 100%;
       display: flex;
       justify-content: space-between;
-      flex-wrap: nowrap;
-      border: 1px solid red;
+      flex-wrap: wrap;
       height: fit-content; }
+      @media screen and (max-width: 600px) {
+        .trayectoria .trayectoria-container .trayectoria-content-1 {
+          flex-direction: column;
+          align-items: center;
+          flex-wrap: nowrap; } }
       .trayectoria .trayectoria-container .trayectoria-content-1 .card-left {
         width: 38%;
         box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
@@ -1594,6 +1652,9 @@ header.main-nav.responsive {
         background: #ffffff;
         height: fit-content;
         position: relative; }
+        @media screen and (max-width: 600px) {
+          .trayectoria .trayectoria-container .trayectoria-content-1 .card-left {
+            width: 90%; } }
         .trayectoria .trayectoria-container .trayectoria-content-1 .card-left h3 {
           color: #969696;
           font-weight: lighter;
@@ -1620,6 +1681,10 @@ header.main-nav.responsive {
         background: #ffffff;
         height: fit-content;
         position: relative; }
+        @media screen and (max-width: 600px) {
+          .trayectoria .trayectoria-container .trayectoria-content-1 .card-right {
+            width: 90%;
+            margin-bottom: 24px; } }
         .trayectoria .trayectoria-container .trayectoria-content-1 .card-right h3 {
           color: #969696;
           font-weight: lighter;
@@ -1641,9 +1706,31 @@ header.main-nav.responsive {
 
 .mg-40 {
   margin-top: 40px; }
+  @media screen and (max-width: 600px) {
+    .mg-40 {
+      margin-top: 24px; } }
 
 .sn-mg {
   margin-bottom: 0 !important; }
+
+.mg-32 {
+  margin-top: -40px; }
+  @media screen and (max-width: 600px) {
+    .mg-32 {
+      margin-top: 0; } }
+
+.mg-card {
+  margin-top: -56px; }
+  @media screen and (max-width: 600px) {
+    .mg-card {
+      margin-top: 0; } }
+
+@media screen and (max-width: 900px) {
+  .mg-resp {
+    margin-top: 32px; } }
+@media screen and (max-width: 600px) {
+  .mg-resp {
+    margin-top: 0; } }
 
 .biografia-historia {
   margin-top: 80px;
@@ -2009,6 +2096,217 @@ header.main-nav.responsive {
       .datos-importantes .datos-container .datos-column .strongP {
         font-family: 'Aspira-Bold';
         font-weight: normal; }
+
+.memorias {
+  width: 59%;
+  margin-top: 104px;
+  padding-left: 104px;
+  margin-left: 16px;
+  position: relative;
+  border-left: 10px solid #55b7e6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  @media screen and (max-width: 900px) {
+    .memorias {
+      width: 70%;
+      border-left: 8px solid #55b7e6; } }
+  @media screen and (max-width: 600px) {
+    .memorias {
+      width: 96%;
+      border-bottom: 8px solid #55b7e6;
+      border-left: none;
+      padding-left: 0;
+      padding-bottom: 16px;
+      margin-top: 40px;
+      margin-left: 0; } }
+  .memorias .memorias-text {
+    font-family: 'Aspira-Medium';
+    line-height: normal;
+    margin-bottom: 8px;
+    margin-top: 8px; }
+
+.memorias-container {
+  margin-top: 104px; }
+  .memorias-container .memorias-inner {
+    position: relative;
+    width: 100%;
+    height: 1264px; }
+    @media screen and (max-width: 900px) {
+      .memorias-container .memorias-inner {
+        height: 1904px; } }
+    @media screen and (max-width: 600px) {
+      .memorias-container .memorias-inner {
+        height: 3888px; } }
+    .memorias-container .memorias-inner .memorias-item {
+      width: 100%;
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      @media screen and (max-width: 900px) {
+        .memorias-container .memorias-inner .memorias-item {
+          justify-content: space-around; } }
+      .memorias-container .memorias-inner .memorias-item .memorias-card {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: 592px;
+        margin-bottom: 40px;
+        margin-left: 16px;
+        margin-right: 16px;
+        box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.35); }
+        @media screen and (max-width: 900px) {
+          .memorias-container .memorias-inner .memorias-item .memorias-card {
+            width: 43%; } }
+        @media screen and (max-width: 600px) {
+          .memorias-container .memorias-inner .memorias-item .memorias-card {
+            width: 100%;
+            height: 608px; } }
+        .memorias-container .memorias-inner .memorias-item .memorias-card .card-box {
+          padding: 16px 16px 8px 24px;
+          position: relative; }
+          .memorias-container .memorias-inner .memorias-item .memorias-card .card-box .title-name {
+            font-size: 1.25rem;
+            margin-bottom: 0; }
+          .memorias-container .memorias-inner .memorias-item .memorias-card .card-box p {
+            margin-top: 24px;
+            font-size: 12px;
+            font-family: 'Aspira-Medium'; }
+          .memorias-container .memorias-inner .memorias-item .memorias-card .card-box hr {
+            width: 32px;
+            border-top: none;
+            border-bottom: solid 2px;
+            border-color: #55b7e6;
+            position: absolute;
+            top: 70px; }
+        .memorias-container .memorias-inner .memorias-item .memorias-card img {
+          width: 100%;
+          height: auto;
+          margin-bottom: 0; }
+  .memorias-container .nav-number {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 24px; }
+    @media screen and (max-width: 600px) {
+      .memorias-container .nav-number {
+        margin-bottom: 0; } }
+    .memorias-container .nav-number p {
+      margin: 0 16px;
+      cursor: pointer; }
+    .memorias-container .nav-number .number-1 {
+      color: #56b7e4;
+      font-weight: bold; }
+    .memorias-container .nav-number .number-2 {
+      color: #969696; }
+    .memorias-container .nav-number i {
+      cursor: pointer; }
+
+.contacto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px; }
+  @media screen and (max-width: 900px) {
+    .contacto {
+      margin-top: 32px; } }
+  @media screen and (max-width: 600px) {
+    .contacto {
+      margin-top: 32px; } }
+  .contacto .contacto-title {
+    color: #a2dfff;
+    text-transform: none;
+    font-size: 3.7rem;
+    font-family: 'Big-Caslon';
+    margin: 0;
+    margin-bottom: 32px;
+    letter-spacing: 4px;
+    font-weight: normal; }
+    @media screen and (max-width: 900px) {
+      .contacto .contacto-title {
+        font-size: 3.5rem;
+        margin-left: 16px; } }
+    @media screen and (max-width: 600px) {
+      .contacto .contacto-title {
+        font-size: 2.5rem;
+        margin-left: 8px;
+        letter-spacing: 3px;
+        margin-bottom: 16px; } }
+  .contacto .contacto-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    .contacto .contacto-form .form-container {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      @media screen and (max-width: 600px) {
+        .contacto .contacto-form .form-container {
+          flex-direction: column; } }
+      .contacto .contacto-form .form-container .form-card {
+        width: 49%;
+        display: flex;
+        flex-direction: column;
+        position: relative; }
+        @media screen and (max-width: 600px) {
+          .contacto .contacto-form .form-container .form-card {
+            width: 100%; } }
+        .contacto .contacto-form .form-container .form-card label {
+          margin-left: 24px; }
+        .contacto .contacto-form .form-container .form-card input {
+          height: 38px;
+          border: solid 2px #7d7978;
+          position: relative; }
+        .contacto .contacto-form .form-container .form-card select {
+          border: solid 2px #7d7978;
+          height: 38px;
+          position: relative; }
+    .contacto .contacto-form .form-container-2 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      position: relative; }
+      .contacto .contacto-form .form-container-2 label {
+        margin-left: 24px; }
+      .contacto .contacto-form .form-container-2 input {
+        height: 38px;
+        border: solid 2px #7d7978;
+        position: relative; }
+      .contacto .contacto-form .form-container-2 select {
+        border: solid 2px #7d7978;
+        height: 38px;
+        position: relative; }
+      .contacto .contacto-form .form-container-2 textarea {
+        height: 200px;
+        border: solid 2px #7d7978;
+        padding-top: 4px;
+        position: relative; }
+    .contacto .contacto-form button {
+      max-width: 100% !important;
+      width: 100%;
+      border: 2px solid;
+      border-color: #7d7978;
+      background: #7d7978;
+      border-radius: 4px;
+      margin-top: 8px;
+      letter-spacing: 4px; }
+    .contacto .contacto-form button:hover {
+      border: 2px solid;
+      border-color: #7d7978;
+      background: #fff;
+      color: #7d7978; }
+    .contacto .contacto-form input.error, .contacto .contacto-form textarea.error {
+      border-color: #F44336 !important; }
+    .contacto .contacto-form label.error {
+      color: #F44336;
+      position: absolute;
+      top: 12px;
+      font-size: 11px;
+      right: 0; }
 
 .bkt-strengths {
   padding: 64px;
@@ -2541,7 +2839,7 @@ form {
     flex-direction: column; }
 
 label {
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   display: flex; }
   label b {
     margin-left: 8px;
@@ -2549,6 +2847,7 @@ label {
 
 input[type=text],
 input[type=email],
+input[type=date],
 input[type=search],
 input[type=tel],
 input[type=url],
@@ -2560,8 +2859,7 @@ textarea, select {
   padding-top: 2px;
   padding-left: 8px;
   margin-bottom: 16px;
-  border: solid 1px #d9d9d9;
-  border-radius: 4px;
+  border-radius: 2px;
   text-align: left;
   font-size: 16px;
   font-weight: 300;
@@ -2570,32 +2868,13 @@ textarea, select {
   transition: border-color 400ms ease-in-out; }
   input[type=text]:focus,
   input[type=email]:focus,
+  input[type=date]:focus,
   input[type=search]:focus,
   input[type=tel]:focus,
   input[type=url]:focus,
   input[type=password]:focus,
   textarea:focus, select:focus {
     outline: none; }
-  input[type=text]:active, input[type=text]:focus, input[type=text]:visited,
-  input[type=email]:active,
-  input[type=email]:focus,
-  input[type=email]:visited,
-  input[type=search]:active,
-  input[type=search]:focus,
-  input[type=search]:visited,
-  input[type=tel]:active,
-  input[type=tel]:focus,
-  input[type=tel]:visited,
-  input[type=url]:active,
-  input[type=url]:focus,
-  input[type=url]:visited,
-  input[type=password]:active,
-  input[type=password]:focus,
-  input[type=password]:visited,
-  textarea:active,
-  textarea:focus,
-  textarea:visited, select:active, select:focus, select:visited {
-    border-bottom-color: #FFF; }
 
 select {
   border: none; }
@@ -2612,6 +2891,13 @@ input[type=checkbox] {
   margin-top: 4px;
   margin-bottom: 16px;
   margin-left: 8px; }
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0; }
 
 table {
   border-collapse: collapse;
