@@ -47,9 +47,7 @@ function contactoEnviarDatos(){
     console.log("enviando datos");
 	var formData = new FormData();
     formData.append('nombre',   $("input[name='nombre']").val() );
-    formData.append('empresa',   $("input[name='nombre-empresa']").val() );
-    formData.append('puesto',   $("input[name='puesto-empresa']").val() );
-    formData.append('tel',   $("input[name='telefono']").val() );
+    formData.append('apellidos',   $("input[name='apellidos']").val() );
     formData.append('email',   $("input[name='email']").val() );
     formData.append('asunto',   $("input[name='asunto']").val() );
     formData.append('mensaje',   $("textarea[name='mensaje']").val() );

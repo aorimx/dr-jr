@@ -120,7 +120,8 @@ header.main-nav.responsive {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgba(48, 163, 214, 0.9);
+  background-color: rgba(88, 89, 91, 0.95);
+  z-index: 300;
 
   @include tablet{
     align-items: center !important;

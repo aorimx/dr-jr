@@ -1,3 +1,24 @@
+<?php
+session_start ();
+if(isset($_GET["idioma"])) {
+    if (!$_SESSION["idiomas"]){
+      $_SESSION["idiomas"] = "es";
+  }
+  elseif ($_GET["idioma"]){
+    $_SESSION["idiomas"]= $_GET["idioma"];
+  }
+
+}
+else{
+  $_GET["idioma"] = "es";
+  $_SESSION["idiomas"]= $_GET["idioma"];
+}
+
+
+include ("lang_".$_SESSION["idiomas"].".php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -21,48 +42,46 @@
     <header class="main-nav">
       <img src="assets/images/recursos/cerebroBlanco.svg" alt="" class="cerebroImg">
       <div class="images-navBar">
-        <img src="assets/images/recursos/nombreDrBlanco.png" alt="" class="logoImg">
-        <img src="assets/images/recursos/Slogan.png"class="logoSlogan" alt="">
+        <img src="assets/images/recursos/slogan.png" alt="" class="logoImg">
+       
       </div>
 
       <div class="navigationBar">
         <nav role="navigation" class="navigation">
           <ul>
-            <a href="index.html">
+            <a href="index.php">
               <li class="activeView">
-                INICIO
+                <?php echo inicio; ?>
               </li>
             </a>
-            <a href="biografia.html">
+            <a href="biografia.php">
               <li>
-                BIOGRAFÍA
+                <?php echo biografia; ?>
               </li>
             </a>
-            <a href="trayectoria.html">
+            <a href="trayectoria.php">
               <li>
-                TRAYECTORIA
+                <?php echo trayectoria; ?>
               </li>
             </a>
-            <a href="memorias.html">
+            <a href="memorias.php">
               <li>
-                MEMORIAS
+                <?php echo memorias; ?>
               </li>
             </a>
             <a href="contacto.php">
               <li>
-               CONTACTO
+                <?php echo contacto; ?>
               </li>
             </a>
-           
           </ul>
           <ul class="idiomas-responsive">
-            <a href="#">
-              <li>ES</li>
+            <a href="index.php?idioma=es">
+              <?php echo es; ?>
             </a>
-            <a href="#">
-              <li>EN</li>
+            <a href="index.php?idioma=en">
+              <?php echo en; ?>
             </a>
-            
           </ul>
         </nav>
         <div class="redes">
@@ -79,13 +98,12 @@
             <img src="assets/images/recursos/intermed.svg" alt="">
           </a>
           <ul class="list-idioma">
-            <a href="#">
-              <li>ES</li>
+            <a href="index.php?idioma=es">
+              <?php echo es; ?>
             </a>
-            <a href="#">
-              <li>EN</li>
+            <a href="index.php?idioma=en">
+              <?php echo en; ?>
             </a>
-            
           </ul>
         </div>
       </div>
@@ -104,7 +122,7 @@
       <div class="content-hero-aviso">
         <div class="llamanosTxt"> 
           <img src="assets/images/recursos/location.svg" class="locationIcon" alt="">
-          <p>PARA LLAMADAS DESDE EL EXTRANJERO LLAMENOS AL NÚMERO 01 800 877 0300</p>
+          <p><?php echo adLlamanos; ?></p>
         </div>
         <img src="assets/images/recursos/x.svg" class="closeIcon" alt="">
       </div>
@@ -162,7 +180,7 @@
           <p class="tiny-text">Médico Cirujano por la Universidad de Guadalajara con Especialidad en Neurosirugía por el Instituto Mexicano del Seguro Social</p>
           <p class="txt-description">El Dr. Juan Manuel Riestra Castañeda es médico cirujano mexicano especialista en neurocirugía. Nació en Culiacán, Sinaloa, el 27 de mayo de 19600 y se trasladó a la ciudad de Guadalajara, Jalisco en1972, con 12 años de edad.</p>
           <p class="txt-description">Ha representado una de las ciencias médicas del siglo XX. En 1991 recibió el reconocimiento al buen desempeño realizado en el departamento de neurología y neurocirugía pediátrica del Hospital de Especialdades Centro Médico de Occidente &lt;&lt;por su contribución sobresaliente y pionera a la neuricirugía moderna>>.</p>
-          <a href="biografia.html">
+          <a href="biografia.php">
               <button class="btn-section-inicio ripple">ir a sección</button>     
           </a>        
         </div>
@@ -173,7 +191,7 @@
           <p class="tiny-text">Educación, concursos, labores sociales, entre otras cosas hacen que el Dr. Juan Manuel Riestra tenga una experiencia y trayectoria de lo más completa.</p>
           <p class="txt-description">Es promotor de conferencias y cursos, tanto nacionales como internacionales Ha contribuido en los primeros ciclos de exposiciones monográficas de actualización cientifíca con diferentes temas médicos. Tiene varios estudios al respecto sobre la combinación sobre lesiones focales y difusas en el Traumatismo de Cráneo Encefálico Severo.</p>
           <p class="txt-description">Fue nominado en 1993 en la Worldwide Federation of Neurological Society (WFNS) con el tema de Anatomía de Seno Cavernoso, consiguiendo exponer la Estructura Hexaédrica Paraselar.</p>
-          <a href="biografia.html#labor">
+          <a href="biografia.php#labor">
             <button class="btn-section-inicio">ir a sección</button>     
           </a>        
          
@@ -194,7 +212,7 @@
             <div class="separator"></div>
             <p class="txt-description">La realización de la Especialidad en Neurocirugía y de otras ciencias requiere de la adquisición de experiencia, convivencia y la estancia hospitalaria con los principales exponentes de medicina en el mundo.</p>
             <div class="separator"></div>
-            <a href="memorias.html">
+            <a href="memorias.php">
                 <button class="btn-section-inicio">ir a sección</button>     
             </a>        
           </div>
@@ -276,7 +294,7 @@
       <div class="footer-inner">
           <div class="footer-ubicacion">
               <div class="footer-map">
-                <h2 class="caslon footer-h2" >UBICACIÓN</h2>
+                <h2 class="caslon footer-h2" ><?php echo ubicacionTitle; ?></h2>
                 <div id="map">
                   
                 </div>
@@ -285,11 +303,11 @@
                   <div class="numeros-telefonicos">
                     <div class="phones">
                       <img src="assets/images/recursos/phone.svg" class="imgPhones" alt="">
-                      <p>Tel. <a href="tel:33381360"> (33) 3813 1360</a></p>
+                      <p><?php echo tel; ?> <a href="tel:33381360"> (33) 3813 1360</a></p>
                     </div>
                     <div class="phones">
                       <img src="assets/images/recursos/emergency.svg" class="imgPhones" alt="">
-                      <p><a href="tel:013331000260"><span class="emergency-text">EMERGENCIAS</span> (01) 33 3100 0260</a></p>
+                      <p><a href="tel:013331000260"><span class="emergency-text"><?php echo emergencias; ?></span> (01) 33 3100 0260</a></p>
                     </div>
                     <div class="phones">
                       <img src="assets/images/recursos/iconoTel3.svg" class="imgPhones" alt="">
@@ -297,7 +315,7 @@
                     </div>
                   </div>
                   <div class="footer-address">
-                    <p>Pablo Neruda #3265 /2° Piso, Consultorio 28</p>
+                    <p>Pablo Neruda #3265 /2° <?php echo piso; ?></p>
                     <p>Col. Providencia. C.P. 44630. Guadalajara, Jalisco</p>
                   </div>
               </div>
@@ -325,8 +343,8 @@
             </div>
       </div>
       <div class="footer-copyright">
-        <p>Copyright © Dr. Juan Manuel Riestra Castañeda 2017. Todos los derechos Reservados.</p>
-        <p><a href="#">Términos y condiciones / Políticas de privacidad</a></p>
+        <p>Copyright © Dr. Juan Manuel Riestra Castañeda 2017. <?php echo copy; ?></p>
+        <p><a href="#"><?php echo terminos; ?></a><a href="#"> <?php echo aviso; ?></a></p>
       </div>
 
     </div>

@@ -105,11 +105,13 @@
         #btn2{
             position: absolute;
             right: -72px;
+            color: $gray-ad;
             @include mobile{
                 right: -2px;
             }
         }
         #btn1{
+            color: $gray-ad;
             @include mobile{
                 left: -16px;
             }
