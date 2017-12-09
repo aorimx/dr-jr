@@ -23,7 +23,7 @@ function contactoEnviarMensajeBtn_click()
     formData.append('nombre',   $("input[name='nombre']").val() );
     formData.append('apellidos',   $("input[name='apellidos']").val() );
     formData.append('email',   $("input[name='email']").val() );
-    formData.append('asunto',   $("input[name='asunto']").val() );
+    formData.append('asunto',  $("select[name='asunto']").val() );
     formData.append('mensaje',   $("textarea[name='mensaje']").val() );
 
 	post('send-form.php',formData,function(data){
@@ -49,7 +49,10 @@ function contactoEnviarDatos(){
     formData.append('nombre',   $("input[name='nombre']").val() );
     formData.append('apellidos',   $("input[name='apellidos']").val() );
     formData.append('email',   $("input[name='email']").val() );
-    formData.append('asunto',   $("input[name='asunto']").val() );
+    formData.append('fecha',   $("input[name='fecha']").val() );
+    formData.append('pais',   $("select[name='pais']").val() );
+    formData.append('estado',   $("input[name='estado']").val() );
+    formData.append('asunto',   $("select[name='asunto']").val() );
     formData.append('mensaje',   $("textarea[name='mensaje']").val() );
 
 	post('send-data.php',formData,function(data){

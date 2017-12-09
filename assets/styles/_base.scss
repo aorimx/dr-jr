@@ -2,7 +2,9 @@
 html,body {
   height: 100%;
 }
-
+.load{
+  margin-top: 0;
+}
 body {
   font-family: $font-family-base;
   font-size: $font-size-base;
@@ -15,9 +17,9 @@ body {
   text-rendering: optimizeLegibility;
   letter-spacing: 1px;
   line-height: 1.5;
-  margin-top: 112px;
+  
   @include mobile{
-    margin-top: 95px;
+    margin-top: 95px !important;
   }
   *{
     box-sizing: border-box;

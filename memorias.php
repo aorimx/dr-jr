@@ -24,25 +24,29 @@ include ("lang_".$_SESSION["idiomas"].".php");
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Dr Juan | [#TODO]</title>
-  <link rel="icon" type="image/png" href="https://dummyimage.com/64x64/000/fff" sizes="64x64">
-  <link rel="icon" type="image/png" href="https://dummyimage.com/180x180/000/fff" sizes="180x180">
-  <!-- [#TODO] Dont forget to update the FAVICON IMAGES in the next route -->
-  <!-- <link rel="icon" type="image/png" href="assets/images/favicon-180x180.png" sizes="128x128"> -->
+  <title>Dr Juan Riestra | Memorias</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" integrity="sha256-K3Njjl2oe0gjRteXwX01fQD5fkk9JFFBdUHy/h38ggY=" crossorigin="anonymous" rel="stylesheet">
   <link href="./assets/styles/main.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
 </head>
 
-<body>
+<body class="load">
   <div class="fondo"></div>
+  <!--  Loading by Enrique -->
+  <div id="load" style="display: flex; z-index:99999999999;">
+    <div class="imgLoading">
+      <img src="assets/images/recursos/loading.gif" alt="">
+    </div>
+    <h2 class="textLoading">Loading...</h2>
+  </div>
   <!--  Header by Enrique -->
   <div class="header-container">
     <header class="main-nav">
       <img src="assets/images/recursos/cerebroBlanco.svg" alt="" class="cerebroImg">
       <div class="images-navBar">
-        <img src="assets/images/recursos/nombreDrBlanco.png" alt="" class="logoImg">
-        <img src="assets/images/recursos/Slogan.png"class="logoSlogan" alt="">
+         <img src="assets/images/recursos/slogan.png" alt="" class="logoImg">
+          
       </div>
       
       <div class="navigationBar">
@@ -64,7 +68,7 @@ include ("lang_".$_SESSION["idiomas"].".php");
               </li>
             </a>
             <a href="memorias.php">
-              <li>
+              <li class="activeView">
                 <?php echo memorias; ?>
               </li>
             </a>
@@ -78,17 +82,17 @@ include ("lang_".$_SESSION["idiomas"].".php");
             <a href="memorias.php?idioma=es">
               <?php echo es; ?>
             </a>
-            <a href="memorias.php?idioma=en">
+            <a href="memorias.php">
               <?php echo en; ?>
             </a>
           </ul>
         </nav>
         <div class="redes">
           <a href="https://www.facebook.com/neurocenter10/" target="_blank">
-            <img src="assets/images/recursos/facebook.svg" alt="">
+            <img src="assets/images/recursos/facebook.svg" alt="" style="height: 15px;">
           </a>
           <a href="#">
-            <img src="assets/images/recursos/instgram.svg" alt="">
+            <img src="assets/images/recursos/instgram.svg" alt="" style="height: 15px;">
           </a>
           <a href="https://www.doctoralia.com.mx/medico/riestra+castaneda+juan+manuel-12335173" target="_blank">
             <img src="assets/images/recursos/doctoralia.svg" alt="">
@@ -100,7 +104,7 @@ include ("lang_".$_SESSION["idiomas"].".php");
             <a href="memorias.php?idioma=es">
               <?php echo es; ?>
             </a>
-            <a href="memorias.php?idioma=en">
+            <a href="memorias.php">
               <?php echo en; ?>
             </a>
           </ul>
@@ -283,7 +287,7 @@ include ("lang_".$_SESSION["idiomas"].".php");
                   <div class="numeros-telefonicos">
                     <div class="phones">
                       <img src="assets/images/recursos/phone.svg" class="imgPhones" alt="">
-                      <p><?php echo tel; ?> <a href="tel:33381360"> (33) 3813 1360</a></p>
+                      <p><?php echo tel; ?> <a href="tel:3338131360"> (33) 3813 1360</a></p>
                     </div>
                     <div class="phones">
                       <img src="assets/images/recursos/emergency.svg" class="imgPhones" alt="">
@@ -303,17 +307,17 @@ include ("lang_".$_SESSION["idiomas"].".php");
             <div class="footer-contacto">
               <div class="footer-logo">
                 <img src="assets/images/recursos/cerebroBlanco.svg" alt="" class="cerebroImg">
-                <img src="assets/images/recursos/nombreDrBlanco.png" alt="" class="logoImg">
-                <img src="assets/images/recursos/Slogan.png"class="logoSlogan" alt="">
+                 <img src="assets/images/recursos/slogan.png" alt="" class="logoImg">
+                  
               </div>
               <div class="footer-redes">
-                <a href="#" class="imgFooterRedes">
+                <a href="https://www.facebook.com/neurocenter10/" target="_blank" class="imgFooterRedes">
                   <img src="assets/images/recursos/facebook.svg" alt="">
                 </a>
                 <a href="#" class="imgFooterRedes">
                   <img src="assets/images/recursos/instgram.svg" alt="">
                 </a>
-                <a href="#" class="imgFooterRedes">
+                <a href="https://www.doctoralia.com.mx/medico/riestra+castaneda+juan+manuel-12335173" target="_blank" class="imgFooterRedes">
                   <img src="assets/images/recursos/doctoralia.svg" alt="">
                 </a>
                 <a href="#" class="imgFooterRedes">
@@ -426,6 +430,16 @@ include ("lang_".$_SESSION["idiomas"].".php");
         slide[slideIndex-1].style.display = "flex";
       }
     </script>
-<!--  Modal by kikin -->
+<!--  Loading by kikin -->
+<script type="text/javascript">
+     window.onload = function(){
+      setTimeout(function(){
+          $("#load").css("display","none");
+          $(".fondo").css("display","block");
+          $(".header-container").css("display","block");
+          $(".load").css("margin-top","112px");
+      }, 1500);
+    };
+</script>
 </body>
 </html>

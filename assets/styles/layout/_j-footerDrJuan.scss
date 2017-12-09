@@ -198,16 +198,10 @@
                             margin-top: 0;
                         }
                     }
-                    .logoImge{
+                    .logoImg{
+                        margin-right: 0 !important;
                         @include mobile{
-                            height: 30px;;
-                        }
-                    }
-                    .logoSlogan{
-                        height: 12px;
-                        margin-top: 8px;
-                        @include mobile{
-                            height: 8px;;
+                            height: 42px;;
                         }
                     }
                 }
@@ -218,6 +212,9 @@
                     justify-content: center;
                     align-items: center;
                     margin-top: 48px;
+                    @include mobile{
+                        margin-top: 32px;
+                    }
             
                     .imgFooterRedes{
                         margin: 8px 16px 6px 24px;

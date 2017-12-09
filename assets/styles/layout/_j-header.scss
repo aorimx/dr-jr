@@ -1,4 +1,5 @@
 .header-container {
+  display: none;
   position: fixed;
   background-color: $gray-header;
   width: 100%;
@@ -254,6 +255,8 @@ header.main-nav.responsive {
   display: none;
   @media screen and (max-width: 992px){
     display: block;
+    margin-top: 16px;
+    margin-right: 8px;
   }
 }
 #nav-icon span {
@@ -325,9 +328,14 @@ header.main-nav.responsive {
   flex-wrap: nowrap;
   opacity: 1;
   align-items: center;
+  justify-content: center;
   width: 440px;
-  height: 64px;
+  height: 80px;
   margin-left:-72px; 
+  @include mobile{
+    width: 60%;
+    margin-left: -52px;
+  }
 }
 @include tablet{
   .redes{
@@ -348,22 +356,18 @@ header.main-nav.responsive {
   
   .images-navBar{
     .logoImg{
-      height: 17px;
-      margin-left: 16px !important;
+      height: 27px;
+      margin-left: 0 !important;
       margin-bottom: 10px !important;
-    }
-    .logoSlogan{
-      height: 5px;
-      margin-left: 16px;
+      margin-right: 0 !important;
     }
   }
 }
 
 
 .logoImg{
-  height: 42px;
-  margin-top: 8px !important;
-  margin-bottom: 16px !important;
+  height: 56px;
+  margin-right: 40px !important;
   //margin-right: 112px !important;
 }
 .cerebroImg{
@@ -373,9 +377,6 @@ header.main-nav.responsive {
     margin-left: 8px !important;
   }
 }
-.logoSlogan{
-  height: 10px;;
-}
 
 .list-idioma{
   @include mobile{
@@ -384,6 +385,7 @@ header.main-nav.responsive {
 }
 //ocultar lo blanco del header
 .fondo{
+  display: none;
   position: absolute;
   z-index: -1;
   height: 120px;

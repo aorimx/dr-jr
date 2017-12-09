@@ -142,6 +142,9 @@
 html, body {
   height: 100%; }
 
+.load {
+  margin-top: 0; }
+
 body {
   font-family: "Aspira-Regular";
   font-size: 16px;
@@ -152,11 +155,10 @@ body {
   -moz-osx-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   letter-spacing: 1px;
-  line-height: 1.5;
-  margin-top: 112px; }
+  line-height: 1.5; }
   @media screen and (max-width: 600px) {
     body {
-      margin-top: 95px; } }
+      margin-top: 95px !important; } }
   body * {
     box-sizing: border-box; }
     body *:focus, body *:active {
@@ -264,6 +266,38 @@ body {
       /* Chrome, Safari, Opera */
       transform: rotate(180deg); }
 
+#load {
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.98); }
+
+.textLoading {
+  color: #56b7e4;
+  text-align: center;
+  font-family: 'Aspira-Medium';
+  letter-spacing: 2px;
+  font-size: 18px; }
+  @media screen and (max-width: 900px) {
+    .textLoading {
+      font-size: 16px; } }
+  @media screen and (max-width: 600px) {
+    .textLoading {
+      font-size: 14px; } }
+
+.imgLoading img {
+  max-width: 136px;
+  height: auto; }
+  @media screen and (max-width: 900px) {
+    .imgLoading img {
+      max-width: 104px; } }
+  @media screen and (max-width: 600px) {
+    .imgLoading img {
+      max-width: 80px; } }
+
 .j-workspace {
   box-sizing: border-box; }
   .j-workspace .j-wrap {
@@ -351,6 +385,7 @@ footer {
         margin-bottom: 0; }
 
 .header-container {
+  display: none;
   position: fixed;
   background-color: #58595b;
   width: 100%;
@@ -550,7 +585,9 @@ header.main-nav.responsive {
   display: none; }
   @media screen and (max-width: 992px) {
     #nav-icon {
-      display: block; } }
+      display: block;
+      margin-top: 16px;
+      margin-right: 8px; } }
 
 #nav-icon span {
   display: block;
@@ -618,9 +655,14 @@ header.main-nav.responsive {
   flex-wrap: nowrap;
   opacity: 1;
   align-items: center;
+  justify-content: center;
   width: 440px;
-  height: 64px;
+  height: 80px;
   margin-left: -72px; }
+  @media screen and (max-width: 600px) {
+    .images-navBar {
+      width: 60%;
+      margin-left: -52px; } }
 
 @media screen and (max-width: 900px) {
   .redes {
@@ -637,16 +679,13 @@ header.main-nav.responsive {
     height: 56px !important; }
 
   .images-navBar .logoImg {
-    height: 17px;
-    margin-left: 16px !important;
-    margin-bottom: 10px !important; }
-  .images-navBar .logoSlogan {
-    height: 5px;
-    margin-left: 16px; } }
+    height: 27px;
+    margin-left: 0 !important;
+    margin-bottom: 10px !important;
+    margin-right: 0 !important; } }
 .logoImg {
-  height: 42px;
-  margin-top: 8px !important;
-  margin-bottom: 16px !important; }
+  height: 56px;
+  margin-right: 40px !important; }
 
 .cerebroImg {
   height: 80px;
@@ -655,14 +694,12 @@ header.main-nav.responsive {
     .cerebroImg {
       margin-left: 8px !important; } }
 
-.logoSlogan {
-  height: 10px; }
-
 @media screen and (max-width: 600px) {
   .list-idioma {
     display: none !important; } }
 
 .fondo {
+  display: none;
   position: absolute;
   z-index: -1;
   height: 120px;
@@ -847,15 +884,11 @@ header.main-nav.responsive {
               .footer-dr .footer-content .footer-inner .footer-contacto .footer-logo .cerebroImg {
                 height: 80px !important;
                 margin-top: 0; } }
-          @media screen and (max-width: 600px) {
-            .footer-dr .footer-content .footer-inner .footer-contacto .footer-logo .logoImge {
-              height: 30px; } }
-          .footer-dr .footer-content .footer-inner .footer-contacto .footer-logo .logoSlogan {
-            height: 12px;
-            margin-top: 8px; }
+          .footer-dr .footer-content .footer-inner .footer-contacto .footer-logo .logoImg {
+            margin-right: 0 !important; }
             @media screen and (max-width: 600px) {
-              .footer-dr .footer-content .footer-inner .footer-contacto .footer-logo .logoSlogan {
-                height: 8px; } }
+              .footer-dr .footer-content .footer-inner .footer-contacto .footer-logo .logoImg {
+                height: 42px; } }
         .footer-dr .footer-content .footer-inner .footer-contacto .footer-redes {
           width: 100%;
           display: flex;
@@ -863,6 +896,9 @@ header.main-nav.responsive {
           justify-content: center;
           align-items: center;
           margin-top: 48px; }
+          @media screen and (max-width: 600px) {
+            .footer-dr .footer-content .footer-inner .footer-contacto .footer-redes {
+              margin-top: 32px; } }
           .footer-dr .footer-content .footer-inner .footer-contacto .footer-redes .imgFooterRedes {
             margin: 8px 16px 6px 24px; }
             @media screen and (max-width: 600px) {
@@ -1049,6 +1085,8 @@ header.main-nav.responsive {
       text-transform: none;
       font-size: 3.7rem;
       margin-top: -16px; }
+      .hero-home .hero-text .p-hero2 span {
+        font-family: 'Aspira-Medium'; }
     .hero-home .hero-text .hero-button {
       border: none;
       outline: 0;
@@ -1065,7 +1103,7 @@ header.main-nav.responsive {
       box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); }
       @media screen and (max-width: 900px) {
         .hero-home .hero-text .hero-button {
-          width: 50%; } }
+          width: 70%; } }
     .hero-home .hero-text .hero-text button:hover {
       background-color: #555;
       color: white; }
@@ -2293,17 +2331,17 @@ header.main-nav.responsive {
       max-width: 100% !important;
       width: 100%;
       border: 2px solid;
-      border-color: #7d7978;
-      background: #7d7978;
+      border-color: #56b7e4;
+      background: #56b7e4;
       border-radius: 4px;
       margin-top: 8px;
       letter-spacing: 4px; }
     .contacto .contacto-form button:hover {
       border: 2px solid;
-      border-color: #7d7978;
+      border-color: #56b7e4;
       background: #fff;
-      color: #7d7978; }
-    .contacto .contacto-form input.error, .contacto .contacto-form textarea.error {
+      color: #56b7e4; }
+    .contacto .contacto-form input.error, .contacto .contacto-form textarea.error, .contacto .contacto-form select.error {
       border-color: #F44336 !important; }
     .contacto .contacto-form label.error {
       color: #F44336;

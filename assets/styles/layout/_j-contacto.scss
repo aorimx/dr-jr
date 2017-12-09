@@ -103,19 +103,19 @@
             max-width: 100% !important;
             width: 100%;
             border: 2px solid;
-            border-color: $gray-ad;
-            background: $gray-ad;
+            border-color: $azul-seccion;
+            background: $azul-seccion;
             border-radius: 4px;
             margin-top: 8px;
             letter-spacing: 4px;
         }
         button:hover{
             border: 2px solid;
-            border-color: $gray-ad;
+            border-color: $azul-seccion;
             background: #fff;
-            color: $gray-ad;
+            color: $azul-seccion;
         }
-        input.error, textarea.error{
+        input.error, textarea.error, select.error{
             border-color:#F44336!important;
         }
         label.error{
