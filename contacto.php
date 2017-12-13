@@ -442,7 +442,7 @@ include ("lang_".$_SESSION["idiomas"].".php");
           $("#load").css("display","none");
           $(".fondo").css("display","block");
           $(".header-container").css("display","block");
-          $(".load").css("margin-top","112px");
+          $(".load").css("margin-top","104px");
       }, 1500);
     };
 </script>

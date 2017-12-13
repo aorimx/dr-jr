@@ -156,9 +156,6 @@ body {
   text-rendering: optimizeLegibility;
   letter-spacing: 1px;
   line-height: 1.5; }
-  @media screen and (max-width: 600px) {
-    body {
-      margin-top: 95px !important; } }
   body * {
     box-sizing: border-box; }
     body *:focus, body *:active {
@@ -423,8 +420,8 @@ header.main-nav {
   padding-right: 16px;
   padding-left: 16px;
   margin: 0 auto;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -583,11 +580,16 @@ header.main-nav.responsive {
   transition: .5s ease-in-out;
   cursor: pointer;
   display: none; }
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 900px) {
     #nav-icon {
       display: block;
-      margin-top: 16px;
+      margin-top: 22px;
       margin-right: 8px; } }
+  @media screen and (max-width: 600px) {
+    #nav-icon {
+      display: block;
+      margin-top: 22px;
+      margin-right: 0; } }
 
 #nav-icon span {
   display: block;
@@ -668,10 +670,6 @@ header.main-nav.responsive {
   .redes {
     display: none; } }
 @media screen and (max-width: 600px) {
-  .main-nav {
-    align-items: flex-start !important;
-    padding-bottom: 0px !important; }
-
   .redes {
     display: none; }
 
@@ -681,18 +679,18 @@ header.main-nav.responsive {
   .images-navBar .logoImg {
     height: 27px;
     margin-left: 0 !important;
-    margin-bottom: 10px !important;
+    margin-bottom: 0 !important;
     margin-right: 0 !important; } }
 .logoImg {
   height: 56px;
-  margin-right: 40px !important; }
+  margin-right: 48px !important; }
 
 .cerebroImg {
   height: 80px;
   margin-left: 24px !important; }
   @media screen and (max-width: 600px) {
     .cerebroImg {
-      margin-left: 8px !important; } }
+      margin-left: 0px !important; } }
 
 @media screen and (max-width: 600px) {
   .list-idioma {
@@ -708,7 +706,7 @@ header.main-nav.responsive {
   top: 0; }
   @media screen and (max-width: 600px) {
     .fondo {
-      height: 96px; } }
+      height: 104px; } }
 
 .activeView {
   font-weight: bold; }
@@ -882,7 +880,7 @@ header.main-nav.responsive {
             margin-left: 0 !important; }
             @media screen and (max-width: 600px) {
               .footer-dr .footer-content .footer-inner .footer-contacto .footer-logo .cerebroImg {
-                height: 80px !important;
+                height: 76px !important;
                 margin-top: 0; } }
           .footer-dr .footer-content .footer-inner .footer-contacto .footer-logo .logoImg {
             margin-right: 0 !important; }
@@ -1066,8 +1064,11 @@ header.main-nav.responsive {
     transform: translate(0%, -50%); }
     @media screen and (max-width: 600px) {
       .hero-home .hero-text {
-        top: 68%;
-        text-align: center; }
+        width: 100%;
+        top: 75%;
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%, -50%); }
         .hero-home .hero-text .p-hero1 {
           font-size: 2.1rem !important; }
         .hero-home .hero-text .p-hero2 {

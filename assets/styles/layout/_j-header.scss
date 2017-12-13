@@ -52,8 +52,8 @@ header.main-nav {
   padding-right: $space-2;
   padding-left: $space-2;
   margin: 0 auto;
-  padding-top: $space-2;
-  padding-bottom: $space-2;
+  padding-top: 12px;
+  padding-bottom: 12px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -253,11 +253,17 @@ header.main-nav.responsive {
   transition: .5s ease-in-out;
   cursor: pointer;
   display: none;
-  @media screen and (max-width: 992px){
+  @include tablet{
     display: block;
-    margin-top: 16px;
+    margin-top: 22px;
     margin-right: 8px;
   }
+  @include mobile{
+    display: block;
+    margin-top: 22px;
+    margin-right: 0;
+  }
+ 
 }
 #nav-icon span {
   display: block;
@@ -343,10 +349,7 @@ header.main-nav.responsive {
   }
 }
 @include mobile{
-  .main-nav{
-    align-items: flex-start !important;
-    padding-bottom: 0px !important;
-  }
+ 
   .redes{
     display: none;
   }
@@ -358,7 +361,7 @@ header.main-nav.responsive {
     .logoImg{
       height: 27px;
       margin-left: 0 !important;
-      margin-bottom: 10px !important;
+      margin-bottom: 0 !important;
       margin-right: 0 !important;
     }
   }
@@ -367,14 +370,13 @@ header.main-nav.responsive {
 
 .logoImg{
   height: 56px;
-  margin-right: 40px !important;
-  //margin-right: 112px !important;
+  margin-right: 48px !important;
 }
 .cerebroImg{
   height: 80px;
   margin-left: 24px !important;
   @include mobile{
-    margin-left: 8px !important;
+    margin-left: 0px !important;
   }
 }
 
@@ -393,7 +395,7 @@ header.main-nav.responsive {
   width: 100%;
   top: 0;
   @include mobile{
-    height: 96px;
+    height: 104px;
   }
 }
 //clase para el nav bar cuando se esta en una vista

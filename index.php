@@ -130,13 +130,13 @@ include ("lang_".$_SESSION["idiomas"].".php");
         <img src="assets/images/recursos/x.svg" class="closeIcon" alt="">
       </div>
     </div>
-    <center class="heroContent">
+    <div class="heroContent">
       <div class="hero-text">
         <p class="p-hero1">Conoce la opinión</p>
         <p class="p-hero2">de mis <span>pacientes</span></p>
         <a href="#testimonios"><button class="hero-button">entrar</button></a>
       </div>
-    </center>
+    </div>
   </div>
   
   <!-- Modal de Masters by Kikin -->
@@ -454,7 +454,7 @@ include ("lang_".$_SESSION["idiomas"].".php");
           $("#load").css("display","none");
           $(".fondo").css("display","block");
           $(".header-container").css("display","block");
-          $(".load").css("margin-top","112px");
+          $(".load").css("margin-top","104px");
       }, 1500);
     };
 </script>
