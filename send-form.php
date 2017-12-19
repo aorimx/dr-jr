@@ -139,7 +139,7 @@ Actualmente es un neurocirujano que cuenta con 19 años de experiencia y es reco
 $mensaje = wordwrap($mensaje, 70, "\r\n");
 $cabeceras = 'MIME-Version: 1.0' . "\r\n";
 $cabeceras .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-$cabeceras .= 'From: Efirsa<ventas@efirsa.mx>';
+$cabeceras .= 'From: Drjuanriestra';
 // Enviamos el email
 mail($correo, 'Dr Juan Manuel Riestra', $mensaje, $cabeceras);
 

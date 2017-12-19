@@ -91,7 +91,7 @@ include ("lang_".$_SESSION["idiomas"].".php");
           <a href="https://www.facebook.com/neurocenter10/" target="_blank">
             <img src="assets/images/recursos/facebook.svg" alt="" style="height: 15px;">
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com/neurocenter10/">
             <img src="assets/images/recursos/instgram.svg" alt="" style="height: 15px;">
           </a>
           <a href="https://www.doctoralia.com.mx/medico/riestra+castaneda+juan+manuel-12335173" target="_blank">
@@ -314,7 +314,7 @@ include ("lang_".$_SESSION["idiomas"].".php");
                 <a href="https://www.facebook.com/neurocenter10/" target="_blank" class="imgFooterRedes">
                   <img src="assets/images/recursos/facebook.svg" alt="">
                 </a>
-                <a href="#" class="imgFooterRedes">
+                <a href="https://www.instagram.com/neurocenter10/" class="imgFooterRedes">
                   <img src="assets/images/recursos/instgram.svg" alt="">
                 </a>
                 <a href="https://www.doctoralia.com.mx/medico/riestra+castaneda+juan+manuel-12335173" target="_blank" class="imgFooterRedes">

@@ -160,7 +160,7 @@ $mensaje ='<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-micro
 $mensaje = wordwrap($mensaje, 70, "\r\n");
 $cabeceras = 'MIME-Version: 1.0' . "\r\n";
 $cabeceras .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-$cabeceras .= 'From: Efirsa<ventas@efirsa.mx>';
+$cabeceras .= 'From: Drjuanriestra';
 // Enviamos el email
 
 mail($victor, 'Consulta Dr Juan Riestra', $mensaje, $cabeceras);
