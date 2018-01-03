@@ -91,7 +91,7 @@ include ("lang_".$_SESSION["idiomas"].".php");
           <a href="https://www.facebook.com/neurocenter10/" target="_blank">
             <img src="assets/images/recursos/facebook.svg" alt="" style="height: 15px;">
           </a>
-          <a href="https://www.instagram.com/neurocenter10/">
+          <a href="https://www.instagram.com/neurocenter10/" target="_blank" >
             <img src="assets/images/recursos/instgram.svg" alt="" style="height: 15px;">
           </a>
           <a href="https://www.doctoralia.com.mx/medico/riestra+castaneda+juan+manuel-12335173" target="_blank">
@@ -181,7 +181,7 @@ include ("lang_".$_SESSION["idiomas"].".php");
         <div class="box-texts">
           <h2 class="bigger-text caslon">BIOGRAFÍA</h2>
           <p class="tiny-text">Médico Cirujano por la Universidad de Guadalajara con Especialidad en Neurocirugía por el Instituto Mexicano del Seguro Social</p>
-          <p class="txt-description">El Dr. Juan Manuel Riestra Castañeda es médico cirujano mexicano especialista en neurocirugía. Nació en Culiacán, Sinaloa, el 27 de mayo de 19600 y se trasladó a la ciudad de Guadalajara, Jalisco en1972, con 12 años de edad.</p>
+          <p class="txt-description">El Dr. Juan Manuel Riestra Castañeda es médico cirujano mexicano especialista en neurocirugía. Nació en Culiacán, Sinaloa, el 27 de mayo de 1960 y se trasladó a la ciudad de Guadalajara, Jalisco en1972, con 12 años de edad.</p>
           <p class="txt-description">Ha representado una de las ciencias médicas del siglo XX. En 1991 recibió el reconocimiento al buen desempeño realizado en el departamento de neurología y neurocirugía pediátrica del Hospital de Especialdades Centro Médico de Occidente &lt;&lt;por su contribución sobresaliente y pionera a la neurocirugía moderna>>.</p>
           <a href="biografia.php">
               <button class="btn-section-inicio ripple">ir a sección</button>     
@@ -333,7 +333,7 @@ include ("lang_".$_SESSION["idiomas"].".php");
                 <a href="https://www.facebook.com/neurocenter10/" target="_blank" class="imgFooterRedes">
                   <img src="assets/images/recursos/facebook.svg" alt="">
                 </a>
-                <a href="https://www.instagram.com/neurocenter10/" class="imgFooterRedes">
+                <a href="https://www.instagram.com/neurocenter10/" target="_blank"  class="imgFooterRedes">
                   <img src="assets/images/recursos/instgram.svg" alt="">
                 </a>
                 <a href="https://www.doctoralia.com.mx/medico/riestra+castaneda+juan+manuel-12335173" target="_blank" class="imgFooterRedes">
